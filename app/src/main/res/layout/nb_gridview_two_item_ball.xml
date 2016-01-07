@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<TextView
+        android:id="@+id/nb_two_balltext "
+        android:layout_width="41dip"
+        android:layout_height="42dip"
+        android:background="@drawable/id_defalut_ball"
+        android:gravity="center"
+        android:textStyle="bold" />
+</LinearLayout>

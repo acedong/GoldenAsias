@@ -1,0 +1,393 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- 手机摇啊摇 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/syxw_pick_random_red"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:background="@android:color/transparent"
+            android:src="@drawable/id_random_icons"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- 选号 -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ScrollView
+            android:id="@+id/syxw_pick_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <!-- 开奖区 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="30dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </RelativeLayout>
+
+                <!-- 选号的容器 -->
+                <!-- 高度固定：留出一个空行——小屏幕手机 -->
+                <!-- 第一位 -->
+                <LinearLayout
+                    android:id="@+id/syxw_pick_one_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout android:id="@+id/syxw_pick_one_title_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="60dp"
+                            android:layout_alignParentLeft="true">
+                            <TextView
+                                android:id="@+id/syxw_pick_one_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginTop="10dip"
+                                android:singleLine="true"
+                                android:text="@string/is_eleven_selected_five_one_label"
+                                android:textColor="@color/darkorange"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/syxw_pick_one_title_area">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="大"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="小"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="单"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="双"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="全"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="清"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <com.goldenasia.lottery.view.custom.MyTwoGridView
+                        android:id="@+id/syxw_pick_one_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:stretchMode="columnWidth"
+                        android:horizontalSpacing="8dp"
+                        android:verticalSpacing="10dp"
+                        android:gravity="center"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="6"/>
+                </LinearLayout>
+
+                <!-- 千位 -->
+                <LinearLayout
+                    android:id="@+id/syxw_pick_two_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout android:id="@+id/syxw_pick_two_title_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="60dp"
+                            android:layout_alignParentLeft="true">
+                            <TextView
+                                android:id="@+id/syxw_pick_two_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginTop="10dip"
+                                android:text="@string/is_eleven_selected_five_two_label"
+                                android:textColor="@color/darkorange" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/syxw_pick_two_title_area">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="大"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="小"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="单"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="双"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="全"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="清"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <com.goldenasia.lottery.view.custom.MyTwoGridView
+                        android:id="@+id/syxw_pick_two_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:stretchMode="columnWidth"
+                        android:horizontalSpacing="8dp"
+                        android:verticalSpacing="10dp"
+                        android:gravity="center"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="6"/>
+                </LinearLayout>
+                <!-- 百位 -->
+
+                <LinearLayout
+                    android:id="@+id/syxw_pick_three_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout android:id="@+id/syxw_pick_three_title_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="60dp"
+                            android:layout_alignParentLeft="true">
+                            <TextView
+                                android:id="@+id/syxw_pick_three_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginTop="10dip"
+                                android:singleLine="true"
+                                android:text="@string/is_eleven_selected_five_three_label"
+                                android:textColor="@color/darkorange"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/syxw_pick_three_title_area">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="大"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="小"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="单"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="双"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="全"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="清"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <com.goldenasia.lottery.view.custom.MyTwoGridView
+                        android:id="@+id/syxw_pick_three_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:stretchMode="columnWidth"
+                        android:horizontalSpacing="8dp"
+                        android:verticalSpacing="10dp"
+                        android:gravity="center"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="6"/>
+                </LinearLayout>
+
+                <!-- 组选 -->
+                <LinearLayout
+                    android:id="@+id/syxw_pick_assemble_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout android:id="@+id/syxw_pick_assemble_title_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="60dp"
+                            android:layout_alignParentLeft="true">
+                            <TextView
+                                android:id="@+id/syxw_pick_assemble_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginTop="10dip"
+                                android:singleLine="true"
+                                android:text="@string/is_eleven_selected_five_one_label"
+                                android:textColor="@color/darkorange"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/syxw_pick_assemble_title_area">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="大"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="小"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="单"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="双"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="全"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="清"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <com.goldenasia.lottery.view.custom.MyTwoGridView
+                        android:id="@+id/syxw_pick_assemble_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:stretchMode="columnWidth"
+                        android:horizontalSpacing="8dp"
+                        android:verticalSpacing="10dp"
+                        android:gravity="center"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="6"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</RelativeLayout>

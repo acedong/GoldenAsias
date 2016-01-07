@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ascv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/nb_binding_bank_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="50dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip" >
+
+                <LinearLayout android:id="@+id/bind_mycard_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" 
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/bind_mycard_tiptext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/red2"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nb_alreadybound_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/settings_itemtop_press"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/is_bind_mycard_prompt_verify"
+                            android:textColor="@color/darkgray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:id="@+id/nb_oldrealname_label"
+                            android:layout_width="65dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="旧卡姓名"
+                            android:textColor="@color/goldenrod" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/nb_oldrealname_edit_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dip"
+                                android:background="@drawable/nb_fillet_white_backdrop_button"
+                                android:hint="请输入旧卡姓名"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:textColor="@color/darkgray"
+                                android:textColorHint="@color/darkgray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:id="@+id/nb_oldcardno_label"
+                            android:layout_width="65dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="旧卡号"
+                            android:textColor="@color/goldenrod" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/nb_oldcardno_edit_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dip"
+                                android:background="@drawable/nb_fillet_white_backdrop_button"
+                                android:hint="请输入旧卡号"
+                                android:singleLine="true"
+                                android:textColor="@color/darkgray"
+                                android:textColorHint="@color/darkgray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dip"
+                        android:background="@drawable/settings_itembottom_press"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/settings_itemtop_press"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/nb_holdcard_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/nb_holdcard_label"
+                            android:layout_width="65dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="持卡人"
+                            android:textColor="@color/goldenrod" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/nb_holdcard_edit_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dip"
+                                android:background="@drawable/nb_fillet_white_backdrop_button"
+                                android:hint="持卡人姓名"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:textColor="@color/darkgray"
+                                android:textColorHint="@color/darkgray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nb_cardnumbers_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:id="@+id/nb_cardnumber_label"
+                            android:layout_width="65dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="银行卡号"
+                            android:textColor="@color/goldenrod" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@+id/nb_cardnumber_edit_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dip"
+                                android:background="@drawable/nb_fillet_white_backdrop_button"
+                                android:hint="银行卡号"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                android:textColor="@color/darkgray"
+                                android:textColorHint="@color/darkgray"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/nb_write_bankcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@id/nb_cardnumber_edit_text"
+                                android:layout_gravity="right"
+                                android:background="@android:color/transparent"
+                                android:text="@string/fa_bookmark"
+                                android:textSize="12sp"
+                                android:visibility="invisible" >
+                            </Button>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nb_bankinfo_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/nb_subbranch_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/settings_itemmiddle_press"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dip"
+                            android:paddingTop="5dip" >
+
+                            <TextView
+                                android:id="@+id/nb_subbranch_label"
+                                android:layout_width="65dip"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="开户支行"
+                                android:textColor="@color/goldenrod" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginRight="10dip"
+                                android:layout_weight="1" >
+
+                                <EditText
+                                    android:id="@+id/nb_subbranch_edit_text"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="35dip"
+                                    android:background="@drawable/nb_fillet_white_backdrop_button"
+                                    android:hint="请输入开户支行"
+                                    android:inputType="text"
+                                    android:singleLine="true"
+                                    android:textColor="@color/darkgray"
+                                    android:textColorHint="@color/darkgray"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/nb_bankname_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/settings_itemmiddle_press"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dip"
+                            android:paddingTop="5dip" >
+
+                            <TextView
+                                android:id="@+id/nb_bankname_label"
+                                android:layout_width="65dip"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="银行名称"
+                                android:textColor="@color/goldenrod" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginRight="10dip"
+                                android:layout_weight="1" >
+
+                                <EditText
+                                    android:id="@+id/nb_bankname_edit_text"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="35dip"
+                                    android:background="@drawable/nb_fillet_white_backdrop_button"
+                                    android:focusable="false"
+                                    android:hint="银行名称"
+                                    android:inputType="text"
+                                    android:singleLine="true"
+                                    android:textColor="@color/darkgray"
+                                    android:textColorHint="@color/darkgray"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/nb_bankcardtype_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/settings_itemmiddle_press"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dip"
+                            android:paddingTop="5dip" >
+
+                            <TextView
+                                android:id="@+id/nb_bankcardtype_label"
+                                android:layout_width="65dip"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="银行卡型"
+                                android:textColor="@color/goldenrod" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginRight="10dip"
+                                android:layout_weight="1" >
+
+                                <EditText
+                                    android:id="@+id/nb_bankcardtype_edit_text"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="35dip"
+                                    android:background="@drawable/nb_fillet_white_backdrop_button"
+                                    android:focusable="false"
+                                    android:hint="银行卡型"
+                                    android:inputType="text"
+                                    android:singleLine="true"
+                                    android:textColor="@color/darkgray"
+                                    android:textColorHint="@color/darkgray"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/nb_provinces_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/settings_itemmiddle_press"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dip"
+                            android:paddingTop="5dip" >
+
+                            <TextView
+                                android:id="@+id/nb_provinces_label"
+                                android:layout_width="65dip"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="开户省市"
+                                android:textColor="@color/goldenrod" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginRight="10dip"
+                                android:layout_weight="1" >
+
+                                <EditText
+                                    android:id="@+id/nb_provinces_edit_text"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="35dip"
+                                    android:layout_marginRight="10dip"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/nb_fillet_white_backdrop_button"
+                                    android:focusable="false"
+                                    android:hint="省份"
+                                    android:inputType="text"
+                                    android:singleLine="true"
+                                    android:textColor="@color/darkgray"
+                                    android:textColorHint="@color/darkgray"
+                                    android:textSize="14sp" />
+
+                                <EditText
+                                    android:id="@+id/nb_city_edit_text"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="35dip"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/nb_fillet_white_backdrop_button"
+                                    android:focusable="false"
+                                    android:hint="城市"
+                                    android:inputType="text"
+                                    android:singleLine="true"
+                                    android:textColor="@color/darkgray"
+                                    android:textColorHint="@color/darkgray"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:background="@drawable/settings_itembottom_press"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nb_next_verify_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/nb_confirm_verify_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/nb_fillet_gray_backdrop_button"
+                        android:enabled="false"
+                        android:text="确定"
+                        android:textColor="@color/darkgray"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/nb_next_verify_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/nb_fillet_gray_backdrop_button"
+                        android:enabled="false"
+                        android:text="下一步"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- 手机摇啊摇 -->
+
+    <LinearLayout android:id="@+id/nb_syfive_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/nb_syfive_lottery_buy_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/play_syfive_lotteryname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:textColor="@color/darkred"/>
+
+                <TextView
+                    android:id="@+id/play_syfive_issuesales"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="@string/is_playssc_salesissue_label"
+                    android:textColor="@color/darkorange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/play_syfive_issuenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/is_playssc_lastissue_wait_label"
+                    android:textColor="@color/white" />
+                <!-- <com.newbee.lottery.view.controls.Anticlockwise
+	                android:id="@+id/play_syfive_salestime"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@android:color/transparent"
+	                android:textColor="@color/goldenrod"
+	                android:textSize="15sp" /> -->
+                
+                <com.goldenasia.lottery.view.controls.RushBuyCountDownTimerView
+			        android:id="@+id/play_syfive_salestime"
+			        android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:textColor="@color/goldenrod"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/nb_syfive_random_red"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/id_random_icons"
+                android:textColor="@color/white" />
+            
+            <com.goldenasia.lottery.view.controls.RushBuyCountDownTimerView
+		        android:id="@+id/play_syfive_opentime"
+		        android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:textSize="0sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- 选择注数提示 -->
+    <LinearLayout
+        android:id="@+id/nb_playsyfive_bottom_prompt_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellowish"
+        android:orientation="horizontal" >
+
+        <!-- 注数 金额 倍数 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/nb_playsyfive_bottom_game_lottery_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/is_shopping_list_betting_notice"
+                android:textColor="@color/darkgray"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nb_playsyfive_bottom_game_doubly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/nb_playsyfive_botton_game_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/nb_playsyfive_botton_game_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- 选号 -->
+    <ScrollView
+        android:id="@+id/nb_syfive_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/nb_playsyfive_bottom_prompt_info" 
+        android:layout_below="@id/nb_syfive_linear">
+
+        <!-- 开奖区 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </RelativeLayout>
+
+            <!-- 选号的容器 -->
+            <!-- 高度固定：留出一个空行——小屏幕手机 -->
+            <!-- 第一位 -->
+            <LinearLayout
+                android:id="@+id/nb_syfive_one_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/nb_syfive_one_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="true"
+                    android:text="@string/is_eleven_selected_five_one_label"
+                    android:textColor="@color/darkorange"
+                    android:textSize="12sp" />
+
+                <com.goldenasia.lottery.view.custom.MyTwoGridView
+                    android:id="@+id/nb_syfive_one_number_container"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:columnWidth="45dip"
+	                android:stretchMode="columnWidth" 
+	                android:horizontalSpacing="8dp"
+	                android:verticalSpacing="10dp"   
+	                android:gravity="center"
+	                android:listSelector="@android:color/transparent"
+	                android:numColumns="6"/>
+            </LinearLayout>
+            
+            <!-- 千位 -->
+            <LinearLayout
+                android:id="@+id/nb_syfive_two_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/nb_syfive_two_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/is_eleven_selected_five_two_label"
+                    android:textColor="@color/darkorange" />
+
+                <com.goldenasia.lottery.view.custom.MyTwoGridView
+                    android:id="@+id/nb_syfive_two_number_container"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:columnWidth="45dip"
+	                android:stretchMode="columnWidth" 
+	                android:horizontalSpacing="8dp"
+	                android:verticalSpacing="10dp"   
+	                android:gravity="center"
+	                android:listSelector="@android:color/transparent"
+	                android:numColumns="6"/>
+            </LinearLayout>
+            <!-- 百位 -->
+
+            <LinearLayout
+                android:id="@+id/nb_syfive_three_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/nb_syfive_three_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="true"
+                    android:text="@string/is_eleven_selected_five_three_label"
+                    android:textColor="@color/darkorange"
+                    android:textSize="12sp" />
+
+                <com.goldenasia.lottery.view.custom.MyTwoGridView
+                    android:id="@+id/nb_syfive_three_number_container"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:columnWidth="45dip"
+	                android:stretchMode="columnWidth" 
+	                android:horizontalSpacing="8dp"
+	                android:verticalSpacing="10dp"   
+	                android:gravity="center"
+	                android:listSelector="@android:color/transparent"
+	                android:numColumns="6"/>
+            </LinearLayout>
+            
+           	<!-- 组选 -->
+            <LinearLayout
+                android:id="@+id/nb_syfive_assemble_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/nb_syfive_assemble_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="true"
+                    android:text="@string/is_eleven_selected_five_one_label"
+                    android:textColor="@color/darkorange"
+                    android:textSize="12sp" />
+
+                <com.goldenasia.lottery.view.custom.MyTwoGridView
+                    android:id="@+id/nb_syfive_assemble_number_container"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:columnWidth="45dip"
+	                android:stretchMode="columnWidth" 
+	                android:horizontalSpacing="8dp"
+	                android:verticalSpacing="10dp"   
+	                android:gravity="center"
+	                android:listSelector="@android:color/transparent"
+	                android:numColumns="6"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+    <!-- 界面 通用容器 -->
+
+    <RelativeLayout
+        android:id="@+id/nb_common_container"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/black" >
+
+        <Button
+            android:id="@+id/nb_common_title_goback"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent" />
+        
+        <TextView
+            android:id="@+id/nb_common_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" 
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/nb_common_title_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip" />
+    </RelativeLayout>
+
+    <!-- 首页界面 -->
+    <RelativeLayout
+        android:id="@+id/nb_login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/black"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/nb_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <!-- 界面 返回按钮与标题 购彩选号 -->
+    <RelativeLayout
+        android:id="@+id/nb_play_selection_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/black"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/nb_play_titlegoback"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/nb_message_titlecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" 
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nb_play_point_title"
+                android:layout_width="12dip"
+                android:layout_height="wrap_content"
+                android:text="玩法"
+                android:layout_marginRight="5dip"
+                android:textSize="12dip"
+                android:textColor="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/nb_play_select_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dip"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/nb_fillet_goldenrod_backdrop_frame_boder"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" 
+                android:paddingRight="5dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/goldenrod"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/imageViewTopic"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+            		android:textColor="@color/goldenrod"
+            		android:background="@android:color/transparent" />
+                
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 界面 返回按钮与标题 -->
+
+    <RelativeLayout
+        android:id="@+id/nb_betting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/black"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/nb_goback_button"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/nb_bettingback_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white" />
+        
+        <Button
+            android:id="@+id/nb_bettingtitle_list_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/is_shopping_button_clear"
+            android:textColor="@color/goldenrod" />
+    </RelativeLayout>
+
+    <!-- 我的彩票界面 标题与设置 -->
+
+    <RelativeLayout
+        android:id="@+id/nb_myself_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/black"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/nb_myself_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="客服" />
+
+        <TextView
+            android:id="@+id/nb_myself_titlecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的彩票" />
+
+        <ImageView
+            android:id="@+id/nb_myself_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/id_myself_setting" />
+    </RelativeLayout>
+
+    <!-- 订单详情 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/nb_order_details_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/black"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/nb_order_details_back"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/nb_order_details_titlecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="投注详情" />
+
+        <Button
+            android:id="@+id/nb_order_details_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@android:color/transparent" 
+            android:text="撤单" />
+    </RelativeLayout>
+
+    <!-- 通用 返回按钮与标题 -->
+
+    <RelativeLayout
+        android:id="@+id/nb_setting_change_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/black"
+        android:visibility="gone" >
+
+		<Button
+            android:id="@+id/nb_setting_goback_button"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/nb_setting_change_titlecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

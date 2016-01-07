@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 活动（广告） -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/nb_lottery_campaign_hall_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/nb_lottery_campaign_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:gravity="center"
+                android:text="@string/is_ssq_default_notice"
+                android:textColor="@color/golden"
+                android:textSize="20sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/nb_campaign_detail_lable"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="活动内容"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/nb_campaign_detail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_ssq_default_notice"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/nb_campaign_desc_lable"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="活动说明"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/nb_campaign_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_ssq_default_notice"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/nb_campaign_minbet_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:text="活动最低投注："
+                        android:textColor="@color/gray" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nb_campaign_minbet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:textColor="@color/gray" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/nb_campaign_baseprize_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:text="活动奖金："
+                        android:textColor="@color/gray" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nb_campaign_baseprize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:textColor="@color/gray" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/nb_campaign_starttime_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:text="活动开始："
+                        android:textColor="@color/gray" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nb_campaign_starttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:textColor="@color/gray" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/nb_campaign_endtime_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:text="活动结束："
+                        android:textColor="@color/gray" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nb_campaign_endtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:textColor="@color/gray" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/nb_campaign_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nb_fillet_goldenyellow_backdrop_button"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="活动领取"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nb_lottery_campaign_hall_prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="暂无活动"
+        android:textColor="@color/gray"
+        android:textSize="16dip"
+        android:visibility="gone" />
+
+</LinearLayout>

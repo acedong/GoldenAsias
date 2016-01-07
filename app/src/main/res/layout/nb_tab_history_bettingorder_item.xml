@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <!-- 彩种名标题 -->
+
+                <TextView
+                    android:id="@+id/nb_orders_lottery_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/golden"
+                    android:textSize="16sp" />
+
+                <!-- 玩法名 -->
+
+                <TextView
+                    android:id="@+id/nb_orders_playgame_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="@string/is_hall_summary_default"
+                    android:textColor="@color/gray" 
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+              	android:orientation="vertical">
+
+                <!-- 订单奖期 -->
+
+                <TextView
+                    android:id="@+id/nb_orders_betting_issue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_hall_summary_default"
+                    android:textColor="@color/gray" />
+
+                <!-- 订单投注金额 -->
+
+                <TextView
+                    android:id="@+id/nb_orders_betting_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_hall_summary_default"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/nb_orders_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_hall_summary_default"
+                    android:textColor="@color/golden" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/nb_orders_details"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dip"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

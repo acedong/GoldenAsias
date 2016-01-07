@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/translucent_itembottom_press_border_frame_top_shape"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您确认清除选号记录？" 
+            android:textColor="@color/darkred"/>
+        
+		<Button
+            android:id="@+id/btn_return"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/btn_style_alert_dialog_button"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/is_shopping_alert_dialog_return" />
+		
+        <Button
+            android:id="@+id/btn_take_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_style_alert_dialog_button"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/is_shopping_alert_dialog_clear" />
+        <!--
+             <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/btn_style_alert_dialog_button"
+            android:text="@string/is_shopping_alert_dialog_save"
+            android:textStyle="bold" />
+        -->
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/btn_style_alert_dialog_cancel"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/is_shopping_alert_dialog_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

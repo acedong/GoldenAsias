@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nb_oldrealname_label"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:text="旧卡姓名"
+            android:textColor="@color/goldenrod" />
+
+        <EditText
+            android:id="@+id/nb_oldrealname_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/nb_fillet_white_backdrop_button"
+            android:hint="请输入旧卡姓名"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/gainsboro"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nb_oldcardno_label"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:text="旧卡号"
+            android:textColor="@color/goldenrod" />
+
+        <EditText
+            android:id="@+id/nb_oldcardno_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/nb_fillet_white_backdrop_button"
+            android:hint="请输入旧卡号"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/gainsboro"
+            android:textSize="12sp" />
+    </LinearLayout>s
+
+</LinearLayout>

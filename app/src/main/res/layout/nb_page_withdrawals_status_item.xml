@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:id="@+id/nb_withdrawal_state_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="65dp"
+        android:src="@drawable/bg_green_circle_success" />
+
+    <View
+        android:id="@+id/nb_withdrawal_view_path"
+        android:layout_width="1dp"
+        android:layout_height="80dip"
+        android:layout_below="@+id/nb_withdrawal_state_image"
+        android:layout_marginLeft="75dp"
+        android:background="#A6A6A6" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nb_withdrawal_state_image"
+        android:layout_marginTop="-20dp"
+        android:layout_toRightOf="@+id/nb_withdrawal_state_image"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nb_withdrawal_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="7"
+                android:singleLine="true"
+                android:text="提取申请成功，已提交银行处理"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/nb_withdrawal_detailed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/nb_withdrawal_bankinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="中国农业银行(1372)" />
+
+                <TextView
+                    android:id="@+id/nb_withdrawal_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

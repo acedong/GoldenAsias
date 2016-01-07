@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_projectno_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="注单编号"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_projectno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_username_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_username_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_cnname_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_kind_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_cnname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_issue_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_issue_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_issue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_playmethod_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_playmethod_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_methodname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_mode_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_mode_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_mode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_marginTop="10dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_money_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_money_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_totalprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_fpoint_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_fpoint_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_dypointdec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_bonus_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_bonus_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_bonus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_bettingstatus_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_bettingstatus_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_buytime_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_buytime_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_writetime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_lotteryno_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_lotteryno_label"
+                    android:textColor="@color/golden" />
+
+                <GridView
+                    android:id="@+id/nb_detail_nocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="30dip"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip" >
+
+                <TextView
+                    android:id="@+id/nb_detail_buynumber_label"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/is_detail_buynumber_label"
+                    android:textColor="@color/golden" />
+
+                <TextView
+                    android:id="@+id/nb_detail_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

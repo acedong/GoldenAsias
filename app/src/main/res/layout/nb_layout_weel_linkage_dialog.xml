@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_gray_round_frame_n"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/nb_address_choose_title"
+        style="@style/login_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="title"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textColor="#676767"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dp"
+        android:background="#2fbeb7"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <com.goldenasia.lottery.view.widget.WheelView
+            android:id="@+id/nb_wheel_province"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1" />
+
+        <com.goldenasia.lottery.view.widget.WheelView
+            android:id="@+id/nb_wheel_city"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="#dfdfdf" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/nb_address_btn_negative"
+            style="@style/login_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_homepage_item"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="取消"
+            android:textColor="#4ca0eb"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="fill_parent"
+            android:background="#dfdfdf" />
+
+        <Button
+            android:id="@+id/nb_address_btn_positive"
+            style="@style/login_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_homepage_item"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="确定"
+            android:textColor="#4ca0eb"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

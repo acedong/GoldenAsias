@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.goldenasia.lottery.view.controls.IUScrollView
+        android:id="@+id/nb_lottery_order_append_details_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/nb_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:scaleType="fitXY" >
+
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" android:layout_marginBottom="10dip" android:orientation="vertical">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" >
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="游戏：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_cnname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="玩法：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_methodname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="开始期号：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_beginissue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+							<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="追号期数：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_issuecount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+                            
+							<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="总金额：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_taskprice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+                            
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="完成期数：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_finishedcount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="中奖期数：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_wincount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+                            
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+		                        <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="奖金返点：" android:textColor="@color/golden" />
+		                        <TextView android:id="@+id/nb_item_append_details_dypointdec" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+		                    </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" >
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="90dip" android:layout_height="wrap_content" android:text="追号编号：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_taskno" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="90dip" android:layout_height="wrap_content" android:text="模式：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_modes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="90dip" android:layout_height="wrap_content" android:text="取消期数：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_cancelcount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+                            
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="90dip" android:layout_height="wrap_content" android:text="中奖金额：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_winprize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="90dip" android:layout_height="wrap_content" android:text="完成金额：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_finishprice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="90dip" android:layout_height="wrap_content" android:text="中奖后停止：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_stoponwin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="90dip" android:layout_height="wrap_content" android:text="追号状态：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                                <TextView android:layout_width="90dip" android:layout_height="wrap_content" android:text="取消金额：" android:textColor="@color/golden" />
+                                <TextView android:id="@+id/nb_item_append_details_cancelprice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                        <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="追号时间：" android:textColor="@color/golden" />
+                        <TextView android:id="@+id/nb_item_append_details_begintime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                    </LinearLayout>
+                    
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                        <TextView android:layout_width="70dip" android:layout_height="wrap_content" android:text="追号内容：" android:textColor="@color/golden" />
+                        <TextView android:id="@+id/nb_item_append_details_codes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/nb_lottery_append_undo_operate_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <Button android:id="@+id/nb_lottery_order_append_details_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/nb_fillet_gray_backdrop_button"
+                            android:text="取消" />
+
+                        <Button android:id="@+id/nb_lottery_order_append_details_unselected"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/nb_fillet_gray_backdrop_button"
+                            android:text="反选" />
+
+                        <Button android:id="@+id/nb_lottery_order_append_details_selectall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/nb_fillet_gray_backdrop_button"
+                            android:text="全选" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/nb_lottery_append_undo_prompt_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="left"
+                        android:visibility="visible" >
+                        <TextView 
+                            android:layout_width="fill_parent" 
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+							android:ellipsize="end" 
+							android:text="可选择 [进行中] 项撤销追号。" 
+							android:textColor="@color/gray" />
+					</LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip" >
+
+                        <Button
+                            android:id="@+id/nb_lottery_append_undo_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nb_fillet_rosered_backdrop_button"
+                            android:gravity="right"
+                            android:enabled="false"
+                            android:text="@string/is_lottery_append_undo_button_editor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/nb_lottery_order_append_details_secondview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@color/black_slight"
+                    android:dividerHeight="1dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.goldenasia.lottery.view.controls.IUScrollView>
+
+</LinearLayout>

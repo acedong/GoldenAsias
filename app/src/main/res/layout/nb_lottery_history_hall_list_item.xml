@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blackgray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/nb_hall_latest_lottery_history_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blackgray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/nb_hall_lottery_history_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/nb_hall_lottery_history_title_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/nb_hall_lottery_history_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="2dip"
+                    android:textColor="@color/goldenrod"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/nb_hall_lottery_history_issue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="2dip"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/nb_hall_lottery_history_title_id"
+                android:paddingLeft="20dip"
+                android:paddingTop="10dip"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/nb_hall_lottery_history_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="45dip"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nb_hall_lottery_history_bet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nb_history_operating_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blackgray"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/nb_history_btnbutting"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:textColor="@color/gray"
+            android:layout_marginRight="15dip"
+            android:textSize="10dip" />
+
+        <Button
+            android:id="@+id/nb_history_btnrandom"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:textColor="@color/gray"
+            android:layout_marginRight="10dip"
+            android:textSize="10dip" />
+        
+        <Button
+            android:id="@+id/nb_history_btnopen"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:textColor="@color/gray"
+            android:layout_marginRight="15dip"
+            android:textSize="10dip" />
+    </LinearLayout>
+
+    <com.goldenasia.lottery.view.custom.MyListView
+        android:id="@+id/nb_lottery_other_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:dividerHeight="1dip"
+        android:divider="@color/black_slight"/>
+
+</LinearLayout>

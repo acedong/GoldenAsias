@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:paddingTop="50dip"
+    android:layout_gravity="top" >
+    
+    <ListView 
+	    android:id="@+id/nb_withdrawals_status_list_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"/>
+
+</LinearLayout>

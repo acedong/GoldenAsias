@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 个人信息滚动样式属性 -->
+    <declare-styleable name="ms_MaterialScrolling">
+        <attr name="ms_flexible_height" format="dimension"/>
+        <attr name="ms_base_height" format="dimension"/>
+    </declare-styleable>
+
+    <!-- tab切换 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <!-- 圆角头像 -->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+        <attr name="src" />
+    </declare-styleable>
+
+
+    <!-- 倒计时 -->
+    <declare-styleable name="CountDownView">
+        <attr name="mills" format="integer" />
+    </declare-styleable>
+
+    <!-- 单选示例 -->
+    <declare-styleable name="MultipleSelectionButton">
+        <attr name="ascv_unselectedTextColor" format="reference" />
+        <attr name="ascv_unselectedColor" format="reference" />
+        <attr name="ascv_selectedColor" format="reference" />
+        <attr name="ascv_selectedTextColor" format="reference" />
+        <attr name="ascv_items" format="reference" />
+        <attr name="ascv_values" format="reference" />
+        <attr name="ascv_equalWidth" format="boolean" />
+        <attr name="ascv_stretch" format="boolean" />
+        <attr name="ascv_defaultSelection" format="integer" />
+        <attr name="ascv_identifier" format="string" />
+    </declare-styleable>
+
+    <!-- List滑动删除 -->
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="RoundedCornersImage">
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ExtendedListView">
+        <attr name="scrollBarPanel" format="reference" />
+        <attr name="scrollBarPanelInAnimation" format="reference" />
+        <attr name="scrollBarPanelOutAnimation" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SpinnerLoader">
+        <attr name="point_color" format="color"/>
+        <attr name="isdynamic" format="boolean"/>
+    </declare-styleable>
+</resources>

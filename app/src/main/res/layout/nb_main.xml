@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.goldenasia.lottery.view.manager.KeyboardListenRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/keyboardRelativeLayout"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackgray"
+    tools:context=".MainActivity" >
+
+    <!-- 界面分为三部分，标题：3钟变化；底部导航：2种变化 -->
+    
+	<!-- 标题信息 -->
+    <include android:id="@+id/nb_title"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true" 
+        layout="@layout/nb_title" />
+    
+    <!-- 底部导航 -->
+	<include android:id="@+id/nb_bottom" 
+	    android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true" 
+        layout="@layout/nb_bottom" />
+	
+	<!-- 切换页面 -->
+    <RelativeLayout
+        android:id="@+id/nb_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackgray"
+        android:layout_below="@id/nb_title"
+        android:layout_above="@id/nb_bottom">
+    </RelativeLayout>
+    
+	
+</com.goldenasia.lottery.view.manager.KeyboardListenRelativeLayout>

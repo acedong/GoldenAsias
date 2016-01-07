@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tab_menu_alert">首页</string>
+    <string name="tab_menu_profile">购彩大厅</string>
+    <string name="tab_menu_pay">开奖走势</string>
+    <string name="tab_menu_setting">我的信息</string>
+
+    <string name="hello">欢迎来到娱乐世界!</string>
+    <string name="app_name">娱乐世界</string>
+    <string name="pop_up_tips_string"> </string>
+    <string name="is_exit">退出</string>
+    <string name="is_positive">确认选号</string>
+    <string name="is_negative">取消</string>
+    <string name="is_loading">加载中……</string>
+    <string name="is_lottery_money_limit">单注投注额不得大于20000元</string>
+    <string name="action_settings">单注投注额不得大于20000元</string>
+
+    <!-- 登录  -->
+    <string name="nb_login_title_str">娱乐世界登录</string>
+    <string name="nb_enroll_link">新用户注册</string>
+    <string name="is_username">用户名:</string>
+    <string name="is_regist_password">密     码:</string>
+    <string name="is_auto_login">自动登录</string>
+    <string name="nb_remember_password_label">记住密码</string>
+    <string name="nb_login_button_label">登录</string>
+    <string name="nb_wait_button_label">稍等片刻...</string>
+    <string name="nb_onlineservice_link">在线客服</string>
+
+    <!-- 购彩大厅 -->
+    <string name="is_user_loginned_test">您好：132632***** \n余额：100.00元</string>
+    <string name="is_user_loginned_notice" formatted="false">您好：T% \n余额：M%元</string>
+    <string name="is_user_loginned" formatted="false">您好：N% \n余额：M%元</string>
+    <string name="is_ssq_default_notice">双色球加奖了，两亿元大派送！</string>
+    <string name="is_hall_common_summary">今日第&#160;ISSUE&#160;期WAIT截止&#160;&#160;&#160;</string>
+    <string name="is_hall_common_issue">第ISSUE期</string>
+    <string name="is_hall_summary_default">数据加载中……</string>
+
+    <!-- 新蜂时时彩  -->
+    <string name="is_hall_ssc_assemble_point_6">请选择3-8个号码</string>
+    <string name="is_hall_ssc_assemble_point_3">请选择2-10个号码</string>
+    <string name="is_hall_ssc_notlocate_point">请选择任意1个以上号码</string>
+    <string name="is_hall_ssc_assemble_point">请选择2个或2个以上号码</string>
+
+    <string name="is_hall_syfive_assemble_one_point">请选择1个或1个以上号码。</string>
+    <string name="is_hall_syfive_assemble_two_point">请选择2个或2个以上号码</string>
+    <string name="is_hall_syfive_assemble_three_point">请选择3个或3个以上号码</string>
+    <string name="is_hall_syfive_assemble_four_point">请选择4个或4个以上号码</string>
+    <string name="is_hall_syfive_assemble_fives_point">请选择5个或5个以上号码</string>
+    <string name="is_hall_syfive_assemble_six_point">请选择6个或6个以上号码</string>
+    <string name="is_hall_syfive_assemble_seven_point">请选择7个或7个以上号码。</string>
+    <string name="is_hall_syfive_assemble_eight_point">请选择8个或8个以上号码</string>
+
+    <string name="is_hall_ssq_title">两元获500万 每周二 四 六开奖</string>
+    <string name="is_hall_ssq_pool">奖池M%元</string>
+    <string name="is_hall_3d_title">10选3中1000元 每天20:30开奖</string>
+    <string name="is_hall_qlc_title">百万奖期期开 每周一 三 五开奖</string>
+    <string name="is_category_hall">购彩大厅</string>
+    <string name="is_lottery_hall">开奖公告</string>
+
+    <!-- 十一选五 -->
+    <string name="is_eleven_selected_five_one_label">第一位</string>
+    <string name="is_eleven_selected_five_two_label">第二位</string>
+    <string name="is_eleven_selected_five_three_label">第三位</string>
+
+    <!-- 双色球 -->
+    <string name="is_ssq_title_default">双色球选号</string>
+    <string name="is_ssq_title">双色球第ISSUE期</string>
+    <string name="is_ssq">双色球</string>
+    <string name="is_random_red">机选红球</string>
+    <string name="is_random_blue">机选篮球</string>
+
+    <!-- 选号 -->
+    <string name="is_ssc_wan_title">万位</string>
+    <string name="is_ssc_qian_title">千位</string>
+    <string name="is_ssc_bai_title">百位</string>
+    <string name="is_ssc_shi_title">十位</string>
+    <string name="is_ssc_ge_title">个位</string>
+    <string name="is_ssc_random">机选一注</string>
+
+    <!-- 选号底部 信息  -->
+    <string name="is_play_default_moneymode_unit">元</string>
+    <string name="is_play_jiao_moneymode_unit">角</string>
+    <string name="is_play_feng_moneymode_unit">分</string>
+    <string name="is_user_loginning">登陆中请等候……</string>
+    <string name="is_ssc_bottom_choose_betsdigit_title">注数：</string>
+    <string name="is_ssc_bottom_choose_money_title">金额：</string>
+    <string name="is_ssq_default_choose_notice">0</string>
+
+    <string name="is_need_to_chose">您还需要选择NUM个</string>
+    <string name="is_ball_red">红球</string>
+    <string name="is_ball_blue">蓝球</string>
+    <string name="is_play_bottom_title">   共 NUM  注   MONEY  元   </string>
+
+    <string name="is_shopping_list_notenum_title">NOTE&#160;注</string>
+    <string name="is_shopping_list_money_title">MONEY&#160;元</string>
+    <string name="is_shopping_list_mode_title">MODE&#160;模式</string>
+
+
+    <string name="is_shopping_list_title" formatted="false">N% I%期</string>
+    <!-- <![CDATA[金额：&#160;&#160;<font color="#ff0000">MONEY</font>&#160;&#160;元<br> 注数：&#160;&#160;<font color="#ff0000">NUM</font>&#160;&#160;注&#160;&#160;]]> -->
+    <string name="is_shopping_list_money" formatted="false"><![CDATA[共&#160;&#160;<font color="#ff0000">MONEY</font>&#160;&#160;元]]></string>
+    <string name="is_shopping_list_Append" formatted="false"><![CDATA[追&#160;&#160;<font color="#ff0000">PERIOD</font>&#160;&#160;期]]></string>
+    <string name="is_shopping_list_notice" formatted="false"><![CDATA[<font color="#ff0000">NUM</font>注&#160;&#160;<font color="#ff0000">ISSUE</font>&#160;期&#160;<font color="#ff0000">BERS</font>&#160;倍]]></string>
+    <string name="is_shopping_list_betting_notice" formatted="false"><![CDATA[&#160;&#160;选号:注数&#160;&#160;<font color="#ff0000">NUM</font>&#160;&#160;注,金额&#160;&#160;<font color="#ff0000">MONEY</font>&#160;&#160;元, 倍数&#160;&#160;<font color="#ff0000">MUL</font>&#160;倍]]></string>
+    <string name="is_shopping_list_betting_num" formatted="false"><![CDATA[注数：&#160;&#160;<font color="#ff0000">NUM</font>&#160;&#160;注]]></string>
+    <string name="is_shopping_list_betting_money" formatted="false"><![CDATA[金额：&#160;&#160;<font color="#ff0000">MONEY1</font>元&#160;&#160;余额：&#160;&#160;<font color="#ff0000">MONEY2</font>元]]></string>
+
+    <!-- 登录 -->
+    <string name="is_login_notice1">温馨提示：娱乐世界网站用户可以直接登录</string>
+    <string name="is_forget_password_notice">您遗忘登录密码时可登录娱乐世界网站（www.newbee.net）找回，或致新蜂娱乐在线客服索回密码！</string>
+    <!-- 我的彩票 -->
+    <string name="my_selfhall_lotteryticket">我的彩票</string>
+    <string name="my_selfhall_fundsflow">我的彩票</string>
+
+    <!-- 用户信息 -->
+    <string name="my_info_title">用户信息</string>
+    <string name="is_notice_info_title">公告资讯</string>
+    <string name="is_oneself_info_title">私人信息</string>
+
+    <string name="is_ssc_history_lottery_table_title_1">开奖期号</string>
+    <string name="is_ssc_history_lottery_table_title_2">开奖号码</string>
+
+    <string name="is_shopping_button_random">机选</string>
+    <string name="is_shopping_button_optional">自选号码</string>
+    <string name="is_shopping_button_clear">清空列表</string>
+    <string name="is_shopping_button_chase">智能追号</string>
+    <string name="is_shopping_button_betting">投注</string>
+    <string name="is_shopping_lable_continuous">追号</string>
+    <string name="is_shopping_lable_alloted">期</string>
+    <string name="is_shopping_lable_betting">投</string>
+    <string name="is_shopping_lable_multiple">倍</string>
+    <string name="is_shopping_lable_appendsettings">中奖后停止追号</string>
+
+    <string name="is_shopping_alert_dialog_clear">清除</string>
+    <string name="is_shopping_alert_dialog_save">保存</string>
+    <string name="is_shopping_alert_dialog_return">返回选号</string>
+    <string name="is_shopping_alert_dialog_cancel">取消</string>
+
+    <string name="is_appendbetting_head_title_label">智能追号</string>
+    <string name="is_appendbetting_head_cancel_label">取消</string>
+    <string name="is_appendbetting_serial_number_label">序号</string>
+    <string name="is_appendbetting_issue_number_label">期号</string>
+    <string name="is_appendbetting_multiple_label">倍数</string>
+    <string name="is_appendbetting_issuesetting_label">期数</string>
+    <string name="is_appendbetting_generate_label">生成</string>
+    <string name="is_appendbetting_grandtotal_label">累计投入</string>
+    <string name="is_appendbetting_winning_label">中奖盈利</string>
+    <string name="is_appendbetting_profitability_label">盈利率</string>
+    <string name="is_appendsettings_numberlist_label">号码列表</string>
+    <string name="is_appendsettings_button_betting">付款</string>
+
+    <string name="is_appendbetting_prompt_label">&#160;&#160;全程最低盈利率NUM</string>
+
+    <string name="is_top_sales_issuelabel">距ISSUE期截止：</string>
+    <string name="is_playssc_lastissue_wait_label">ISSUE&#160;&#160;期等待开奖&#160;&#160;NUMBER</string>
+    <string name="is_playssc_lastissue_already_label">ISSUE&#160;&#160;期开奖号&#160;&#160;NUMBER</string>
+    <string name="is_playssc_salesissue_label">ISSUE期销售截止</string>
+    <string name="is_playssc_sales_timelabel">TIME</string>
+    <string name="is_history_details_issue_label">第ISSUE期</string>
+
+    <!-- 投注详情 -->
+    <string name="is_detail_username_label">游戏用户</string>
+    <string name="is_detail_kind_label">游戏</string>
+    <string name="is_detail_issue_label">奖期</string>
+    <string name="is_detail_playmethod_label">玩法</string>
+    <string name="is_detail_mode_label">模式</string>
+    <string name="is_detail_money_label">投注金额</string>
+    <string name="is_detail_fpoint_label">返点</string>
+    <string name="is_detail_bonus_label">奖金</string>
+    <string name="is_detail_bettingstatus_label">注单状态</string>
+    <string name="is_detail_buytime_label">投注时间</string>
+    <string name="is_detail_lotteryno_label">开奖号码</string>
+    <string name="is_detail_buynumber_label">投注号码</string>
+
+    <string name="is_detail_money_unit_label">UNIT元</string>
+
+    <!-- 设置 -->
+    <string name="is_settings_title_label">设置</string>
+    <string name="is_binding_info_bank_url">http://apis.haoservice.com/lifeservice/bankcard/query</string>
+    <string name="is_bindinfo_bank_notice1">温馨提示：以下银行信息不正确会导致提现出错！请检查信息</string>
+
+    <string name="is_currency_card_tip">日累计转出金额最少MINMONEY最多小于等于MAXMONEY元TIME</string>
+    <string name="is_maximum_rollout">今天还可以转出BOUT次&#160;&#160; 您的余额:BALANCE元</string>
+
+    <string name="is_userinfo_bank_tail_number">尾号 NUMBER</string>
+    <string name="is_userinfo_bank_lessthan_balance">建议转出NUMBER元以上金额 </string>
+    <string name="is_userinfo_bank_morethan_balance">本次最多转出NUMBER元 </string>
+
+    <string name="is_client_version_no">版本号:VERSION</string>
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="is_bind_mycard_prompt_verify">温馨提示：如需绑定新卡请验证您的旧卡信息</string>
+    <string name="is_mobile_shakes_lable">手机摇一摇机选</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <!-- 弹窗 -->
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="is_betting_prompt_title" formatted="false"><![CDATA[<font color="#ff0000">LOTTERYNAME</font>&#160;&#160;第&#160;ISSUE&#160;期<br>总注数:NOTE]]></string>
+    <string name="is_betting_prompt_pursue" formatted="false"><![CDATA[总注数:NOTE<br>追PERIOD期<br>总金额]]></string>
+    <string name="is_betting_prompt_nothing" formatted="false"><![CDATA[总注数:NOTE<br>总金额]]></string>
+
+    <!-- Bottom 菜单 -->
+    <string name="is_home_ico_mune_label">购彩大厅</string>
+    <string name="is_newlottery_ico_mune_label">最新开奖</string>
+    <string name="is_gamehistory_ico_mune_label">游戏记录</string>
+    <string name="is_accountcenter_ico_mune_label">我的彩票</string>
+
+    <string name="is_lottery_append_undo_button_editor">编辑撤销</string>
+    <string name="is_lottery_append_undo_button_success">撤销追号</string>
+
+    <!-- 文字图标  -->
+    <string name="fa_glass">&#xf000;</string>
+    <!-- 杯子 -->
+    <string name="fa_music">&#xf001;</string>
+    <!-- 音乐 -->
+    <string name="fa_search">&#xf002;</string>
+    <!-- 搜索 -->
+    <string name="fa_envelope_o">&#xf003;</string>
+    <!-- 信封 -->
+    <string name="fa_heart">&#xf004;</string>
+    <!-- 心 -->
+    <string name="fa_star">&#xf005;</string>
+    <!-- 星 -->
+    <string name="fa_star_o">&#xf006;</string>
+    <!-- 星 -->
+    <string name="fa_user">&#xf007;</string>
+    <!-- 用户 -->
+    <string name="fa_film">&#xf008;</string>
+    <!-- 影片 -->
+    <string name="fa_th_large">&#xf009;</string>
+    <!-- 四格  -->
+    <string name="fa_th">&#xf00a;</string>
+    <!-- 九宫格 -->
+    <string name="fa_th_list">&#xf00b;</string>
+    <!-- 列表 -->
+    <string name="fa_check">&#xf00c;</string>
+    <!-- 对号 -->
+    <string name="fa_times">&#xf00d;</string>
+    <!-- 关闭 -->
+    <string name="fa_search_plus">&#xf00e;</string>
+    <!-- 搜索加 -->
+    <string name="fa_search_minus">&#xf010;</string>
+    <!-- 搜索减 -->
+    <string name="fa_power_off">&#xf011;</string>
+    <!-- 关闭 -->
+    <string name="fa_signal">&#xf012;</string>
+    <!-- 信号 -->
+    <string name="fa_cog">&#xf013;</string>
+    <!-- 齿轮 -->
+    <string name="fa_trash_o">&#xf014;</string>
+    <!-- 垃圾桶 -->
+    <string name="fa_home">&#xf015;</string>
+    <!-- 家 -->
+    <string name="fa_file_o">&#xf016;</string>
+    <!-- 文件 -->
+    <string name="fa_clock_o">&#xf017;</string>
+    <!-- 表 -->
+    <string name="fa_road">&#xf018;</string>
+    <!-- 路 -->
+    <string name="fa_download">&#xf019;</string>
+    <!-- 下载 -->
+    <string name="fa_arrow_circle_o_down">&#xf01a;</string>
+    <!-- 箭头圈 下 -->
+    <string name="fa_arrow_circle_o_up">&#xf01b;</string>
+    <!-- 箭头圈 下 -->
+    <string name="fa_inbox">&#xf01c;</string>
+    <!-- 盒子 -->
+    <string name="fa_play_circle_o">&#xf01d;</string>
+    <!-- 播放 -->
+    <string name="fa_repeat">&#xf01e;</string>
+    <!-- 重复 -->
+    <string name="fa_refresh">&#xf021;</string>
+    <!-- 刷新 -->
+    <string name="fa_list_alt">&#xf022;</string>
+    <!-- 列表 -->
+    <string name="fa_lock">&#xf023;</string>
+    <!-- 锁 -->
+    <string name="fa_flag">&#xf024;</string>
+    <!-- 旗子 -->
+    <string name="fa_headphones">&#xf025;</string>
+    <!-- 头戴式耳机 -->
+    <string name="fa_volume_off">&#xf026;</string>
+    <!-- 音量 开 -->
+    <string name="fa_volume_down">&#xf027;</string>
+    <!-- 音量 下 -->
+    <string name="fa_volume_up">&#xf028;</string>
+    <!-- 音量 上 -->
+    <string name="fa_qrcode">&#xf029;</string>
+    <!-- 喇叭 -->
+    <string name="fa_barcode">&#xf02a;</string>
+    <!-- 一维码 -->
+    <string name="fa_tag">&#xf02b;</string>
+    <!-- 标签 -->
+    <string name="fa_tags">&#xf02c;</string>
+    <!-- 多标签 -->
+    <string name="fa_book">&#xf02d;</string>
+    <!-- 书 -->
+    <string name="fa_bookmark">&#xf02e;</string>
+    <!-- 书签 -->
+    <string name="fa_print">&#xf02f;</string>
+    <!-- 打印 -->
+    <string name="fa_camera">&#xf030;</string>
+    <!-- 相机 -->
+    <string name="fa_font">&#xf031;</string>
+    <!-- 字体A -->
+    <string name="fa_bold">&#xf032;</string>
+    <!-- 字体B -->
+    <string name="fa_italic">&#xf033;</string>
+    <!-- 字体I -->
+    <string name="fa_text_height">&#xf034;</string>
+    <!-- 字体高 -->
+    <string name="fa_text_width">&#xf035;</string>
+    <!-- 字体宽 -->
+    <string name="fa_align_left">&#xf036;</string>
+    <!-- 左边排列 -->
+    <string name="fa_align_center">&#xf037;</string>
+    <!-- 居中排列 -->
+    <string name="fa_align_right">&#xf038;</string>
+    <!-- 右边排列 -->
+    <string name="fa_align_justify">&#xf039;</string>
+    <!-- 对其排列 -->
+    <string name="fa_list">&#xf03a;</string>
+    <!-- 列表 -->
+    <string name="fa_outdent">&#xf03b;</string>
+    <!-- 图文外图标 -->
+    <string name="fa_indent">&#xf03c;</string>
+    <!-- 图文内图标 -->
+    <string name="fa_video_camera">&#xf03d;</string>
+    <!-- 视频 -->
+    <string name="fa_picture_o">&#xf03e;</string>
+    <!-- 图片 -->
+    <string name="fa_pencil">&#xf040;</string>
+    <!-- 笔 -->
+    <string name="fa_map_marker">&#xf041;</string>
+    <!-- 地图图标 -->
+    <string name="fa_adjust">&#xf042;</string>
+    <!-- 调节 -->
+    <string name="fa_tint">&#xf043;</string>
+    <!-- 色彩 -->
+    <string name="fa_pencil_square_o">&#xf044;</string>
+    <!-- 铅笔广场 -->
+    <string name="fa_share_square_o">&#xf045;</string>
+    <!-- 分享广场 -->
+    <string name="fa_check_square_o">&#xf046;</string>
+    <!-- 对号广场 -->
+    <string name="fa_arrows">&#xf047;</string>
+    <!-- 十字箭头 -->
+    <string name="fa_step_backward">&#xf048;</string>
+    <!-- 回退 -->
+    <string name="fa_fast_backward">&#xf049;</string>
+    <!-- 快退 -->
+    <string name="fa_backward">&#xf04a;</string>
+    <!-- 往后 -->
+    <string name="fa_play">&#xf04b;</string>
+    <!-- 播放 -->
+    <string name="fa_pause">&#xf04c;</string>
+    <!-- 暂停 -->
+    <string name="fa_stop">&#xf04d;</string>
+    <!-- 停止 -->
+    <string name="fa_forward">&#xf04e;</string>
+    <!-- 前进 -->
+    <string name="fa_fast_forward">&#xf050;</string>
+    <!-- 双倍快进 -->
+    <string name="fa_step_forward">&#xf051;</string>
+    <!-- 双倍快退 -->
+    <string name="fa_eject">&#xf052;</string>
+    <!-- 向上 -->
+    <string name="fa_chevron_left">&#xf053;</string>
+    <!-- 向左 -->
+    <string name="fa_chevron_right">&#xf054;</string>
+    <!-- 向右 -->
+    <string name="fa_plus_circle">&#xf055;</string>
+    <!-- 圆形加号 -->
+    <string name="fa_minus_circle">&#xf056;</string>
+    <!-- 圆形减号 -->
+    <string name="fa_times_circle">&#xf057;</string>
+    <!-- 圆形时间 -->
+    <string name="fa_check_circle">&#xf058;</string>
+    <!-- 圆形对号 -->
+    <string name="fa_question_circle">&#xf059;</string>
+    <!-- 圆形问号 -->
+    <string name="fa_info_circle">&#xf05a;</string>
+    <!-- 圆形信息 -->
+    <string name="fa_crosshairs">&#xf05b;</string>
+    <!-- 十字线 -->
+    <string name="fa_times_circle_o">&#xf05c;</string>
+    <!-- 图形错号 -->
+    <string name="fa_check_circle_o">&#xf05d;</string>
+    <!-- 图形对号 -->
+    <string name="fa_ban">&#xf05e;</string>
+    <!-- 禁止 -->
+    <string name="fa_arrow_left">&#xf060;</string>
+    <!-- 方向键 左 -->
+    <string name="fa_arrow_right">&#xf061;</string>
+    <!-- 方向键 右 -->
+    <string name="fa_arrow_up">&#xf062;</string>
+    <!-- 方向键 上 -->
+    <string name="fa_arrow_down">&#xf063;</string>
+    <!-- 方向键 下 -->
+    <string name="fa_share">&#xf064;</string>
+    <!-- 分享 -->
+    <string name="fa_expand">&#xf065;</string>
+    <!-- 放大 -->
+    <string name="fa_compress">&#xf066;</string>
+    <!-- 压缩 -->
+    <string name="fa_plus">&#xf067;</string>
+    <!-- 加号 -->
+    <string name="fa_minus">&#xf068;</string>
+    <!-- 减号 -->
+    <string name="fa_asterisk">&#xf069;</string>
+    <!-- 星号 -->
+    <string name="fa_exclamation_circle">&#xf06a;</string>
+    <!-- 圆形叹号 -->
+    <string name="fa_gift">&#xf06b;</string>
+    <!-- 礼物 -->
+    <string name="fa_leaf">&#xf06c;</string>
+    <!-- 叶子 -->
+    <string name="fa_fire">&#xf06d;</string>
+    <!-- 火 -->
+    <string name="fa_eye">&#xf06e;</string>
+    <!-- 眼睛 -->
+    <string name="fa_eye_slash">&#xf070;</string>
+    <!-- 闭眼 -->
+    <string name="fa_exclamation_triangle">&#xf071;</string>
+    <!-- 三角叹号 -->
+    <string name="fa_plane">&#xf072;</string>
+    <!-- 飞机 -->
+    <string name="fa_calendar">&#xf073;</string>
+    <!-- 日历 -->
+    <string name="fa_random">&#xf074;</string>
+    <!-- 随机 -->
+    <string name="fa_comment">&#xf075;</string>
+    <!-- 评论 -->
+    <string name="fa_magnet">&#xf076;</string>
+    <!-- 磁铁 -->
+    <string name="fa_chevron_up">&#xf077;</string>
+    <!-- 向上 指标 -->
+    <string name="fa_chevron_down">&#xf078;</string>
+    <!-- 向下 指标 -->
+    <string name="fa_retweet">&#xf079;</string>
+    <!-- 循环 -->
+    <string name="fa_shopping_cart">&#xf07a;</string>
+    <!-- 购物车 -->
+    <string name="fa_folder">&#xf07b;</string>
+    <!-- 文件夹 -->
+    <string name="fa_folder_open">&#xf07c;</string>
+    <!-- 打开文件夹 -->
+    <string name="fa_arrows_v">&#xf07d;</string>
+    <!-- 上下箭头 -->
+    <string name="fa_arrows_h">&#xf07e;</string>
+    <!-- 上下箭头 -->
+    <string name="fa_bar_chart_o">&#xf080;</string>
+    <!-- 图表 -->
+    <string name="fa_twitter_square">&#xf081;</string>
+    <!-- twitter -->
+    <string name="fa_facebook_square">&#xf082;</string>
+    <!-- facebook -->
+    <string name="fa_camera_retro">&#xf083;</string>
+    <!-- 相机复古 -->
+    <string name="fa_key">&#xf084;</string>
+    <!-- 钥匙 -->
+    <string name="fa_cogs">&#xf085;</string>
+    <!-- 齿轮 -->
+    <string name="fa_comments">&#xf086;</string>
+    <!-- 意见 -->
+    <string name="fa_thumbs_o_up">&#xf087;</string>
+    <!-- 大拇指 上-->
+    <string name="fa_thumbs_o_down">&#xf088;</string>
+    <!-- 大拇指 下 -->
+    <string name="fa_star_half">&#xf089;</string>
+    <!-- 半星 -->
+    <string name="fa_heart_o">&#xf08a;</string>
+    <!-- 心 -->
+    <string name="fa_sign_out">&#xf08b;</string>
+    <!-- 退出 -->
+    <string name="fa_linkedin_square">&#xf08c;</string>
+    <!-- linkedin  -->
+    <string name="fa_thumb_tack">&#xf08d;</string>
+    <!-- 图钉 -->
+    <string name="fa_external_link">&#xf08e;</string>
+    <!-- 外部链接 -->
+    <string name="fa_sign_in">&#xf090;</string>
+    <!-- 登录 -->
+    <string name="fa_trophy">&#xf091;</string>
+    <!-- 锦标 -->
+    <string name="fa_github_square">&#xf092;</string>
+    <!-- github -->
+    <string name="fa_upload">&#xf093;</string>
+    <!-- 上传 -->
+    <string name="fa_lemon_o">&#xf094;</string>
+    <!-- 柠檬 -->
+    <string name="fa_phone">&#xf095;</string>
+    <!-- 电话 -->
+    <string name="fa_square_o">&#xf096;</string>
+    <!-- 方格 -->
+    <string name="fa_bookmark_o">&#xf097;</string>
+    <!-- 书签 -->
+    <string name="fa_phone_square">&#xf098;</string>
+    <!-- 电话 -->
+    <string name="fa_twitter">&#xf099;</string>
+    <!-- twitter -->
+    <string name="fa_facebook">&#xf09a;</string>
+    <!-- facebook -->
+    <string name="fa_github">&#xf09b;</string>
+    <!-- github -->
+    <string name="fa_unlock">&#xf09c;</string>
+    <!-- 开锁 -->
+    <string name="fa_credit_card">&#xf09d;</string>
+    <!-- 信用卡 -->
+    <string name="fa_rss">&#xf09e;</string>
+    <!-- rss -->
+    <string name="fa_hdd_o">&#xf0a0;</string>
+    <!-- 硬盘 -->
+    <string name="fa_bullhorn">&#xf0a1;</string>
+    <!-- 牛角 -->
+    <string name="fa_bell">&#xf0f3;</string>
+    <!-- 钟 -->
+    <string name="fa_certificate">&#xf0a3;</string>
+    <!-- 证书 -->
+    <string name="fa_hand_o_right">&#xf0a4;</string>
+    <!-- 右手 -->
+    <string name="fa_hand_o_left">&#xf0a5;</string>
+    <!-- 左手 -->
+    <string name="fa_hand_o_up">&#xf0a6;</string>
+    <!-- 上手 -->
+    <string name="fa_hand_o_down">&#xf0a7;</string>
+    <!-- 下手 -->
+    <string name="fa_arrow_circle_left">&#xf0a8;</string>
+    <!-- 圆形左标 -->
+    <string name="fa_arrow_circle_right">&#xf0a9;</string>
+    <!-- 圆形右标 -->
+    <string name="fa_arrow_circle_up">&#xf0aa;</string>
+    <!-- 圆形上标 -->
+    <string name="fa_arrow_circle_down">&#xf0ab;</string>
+    <!-- 圆形下标 -->
+    <string name="fa_globe">&#xf0ac;</string>
+    <!-- 地球 -->
+    <string name="fa_wrench">&#xf0ad;</string>
+    <!-- 扳手 -->
+    <string name="fa_tasks">&#xf0ae;</string>
+    <!-- 任务 -->
+    <string name="fa_filter">&#xf0b0;</string>
+    <!-- 过滤器 -->
+    <string name="fa_briefcase">&#xf0b1;</string>
+    <!-- 公文包 -->
+    <string name="fa_arrows_alt">&#xf0b2;</string>
+    <!-- 放大箭头 -->
+    <string name="fa_users">&#xf0c0;</string>
+    <!-- 用户组 -->
+    <string name="fa_link">&#xf0c1;</string>
+    <!-- 链接 -->
+    <string name="fa_cloud">&#xf0c2;</string>
+    <!-- 云 -->
+    <string name="fa_flask">&#xf0c3;</string>
+    <!-- 烧瓶 -->
+    <string name="fa_scissors">&#xf0c4;</string>
+    <!-- 剪刀 -->
+    <string name="fa_files_o">&#xf0c5;</string>
+    <!-- 档 -->
+    <string name="fa_paperclip">&#xf0c6;</string>
+    <!-- 回形针 -->
+    <string name="fa_floppy_o">&#xf0c7;</string>
+    <!-- 软盘 -->
+    <string name="fa_square">&#xf0c8;</string>
+    <!-- 正方形 -->
+    <string name="fa_bars">&#xf0c9;</string>
+    <!-- 酒吧 -->
+    <string name="fa_list_ul">&#xf0ca;</string>
+    <!-- 列表 UL -->
+    <string name="fa_list_ol">&#xf0cb;</string>
+    <!-- 列表 Ol -->
+    <string name="fa_strikethrough">&#xf0cc;</string>
+    <!-- 删除线 -->
+    <string name="fa_underline">&#xf0cd;</string>
+    <!-- 底线 -->
+    <string name="fa_table">&#xf0ce;</string>
+    <!-- 表 -->
+    <string name="fa_magic">&#xf0d0;</string>
+    <!-- 魔术 -->
+    <string name="fa_truck">&#xf0d1;</string>
+    <!-- 卡车 -->
+    <string name="fa_pinterest">&#xf0d2;</string>
+    <!-- pinterest -->
+    <string name="fa_pinterest_square">&#xf0d3;</string>
+    <!-- pinterest -->
+    <string name="fa_google_plus_square">&#xf0d4;</string>
+    <!-- google plus -->
+    <string name="fa_google_plus">&#xf0d5;</string>
+    <!-- google plus -->
+    <string name="fa_money">&#xf0d6;</string>
+    <!-- 钱 -->
+    <string name="fa_caret_down">&#xf0d7;</string>
+    <!-- 箭头 下 -->
+    <string name="fa_caret_up">&#xf0d8;</string>
+    <!-- 箭头 上 -->
+    <string name="fa_caret_left">&#xf0d9;</string>
+    <!-- 箭头 左 -->
+    <string name="fa_caret_right">&#xf0da;</string>
+    <!-- 箭头 右 -->
+    <string name="fa_columns">&#xf0db;</string>
+    <!-- 列 -->
+    <string name="fa_sort">&#xf0dc;</string>
+    <!-- 分类 -->
+    <string name="fa_sort_asc">&#xf0dd;</string>
+    <!-- 分类倒序 -->
+    <string name="fa_sort_desc">&#xf0de;</string>
+    <!-- 分类正序 -->
+    <string name="fa_envelope">&#xf0e0;</string>
+    <!-- 信封 -->
+    <string name="fa_linkedin">&#xf0e1;</string>
+    <!-- linkedin -->
+    <string name="fa_undo">&#xf0e2;</string>
+    <!-- 复原 -->
+    <string name="fa_gavel">&#xf0e3;</string>
+    <!-- 木槌 -->
+    <string name="fa_tachometer">&#xf0e4;</string>
+    <!-- 转速表 -->
+    <string name="fa_comment_o">&#xf0e5;</string>
+    <!-- 评论 -->
+    <string name="fa_comments_o">&#xf0e6;</string>
+    <!-- 评论 -->
+    <string name="fa_bolt">&#xf0e7;</string>
+    <!-- 螺栓 -->
+    <string name="fa_sitemap">&#xf0e8;</string>
+    <!-- 网站地图 -->
+    <string name="fa_umbrella">&#xf0e9;</string>
+    <!-- 伞 -->
+    <string name="fa_clipboard">&#xf0ea;</string>
+    <!-- 剪贴板 -->
+    <string name="fa_lightbulb_o">&#xf0eb;</string>
+    <!-- 灯泡 -->
+    <string name="fa_exchange">&#xf0ec;</string>
+    <!-- 交换 -->
+    <string name="fa_cloud_download">&#xf0ed;</string>
+    <!-- 云下载 -->
+    <string name="fa_cloud_upload">&#xf0ee;</string>
+    <!-- 云上传 -->
+    <string name="fa_user_md">&#xf0f0;</string>
+    <!-- 用户MD -->
+    <string name="fa_stethoscope">&#xf0f1;</string>
+    <!-- 听筒 -->
+    <string name="fa_suitcase">&#xf0f2;</string>
+    <!-- 手提箱 -->
+    <string name="fa_bell_o">&#xf0a2;</string>
+    <!-- 钟 -->
+    <string name="fa_coffee">&#xf0f4;</string>
+    <!-- 咖啡 -->
+    <string name="fa_cutlery">&#xf0f5;</string>
+    <!-- 刀具 -->
+    <string name="fa_file_text_o">&#xf0f6;</string>
+    <!-- 文本文件 -->
+    <string name="fa_building_o">&#xf0f7;</string>
+    <!-- 建造 -->
+    <string name="fa_hospital_o">&#xf0f8;</string>
+    <!-- 医院 -->
+    <string name="fa_ambulance">&#xf0f9;</string>
+    <!-- 救护车 -->
+    <string name="fa_medkit">&#xf0fa;</string>
+    <!-- 医疗包 -->
+    <string name="fa_fighter_jet">&#xf0fb;</string>
+    <!-- 战斗机 -->
+    <string name="fa_beer">&#xf0fc;</string>
+    <!-- 啤酒 -->
+    <string name="fa_h_square">&#xf0fd;</string>
+    <!-- 正方形 -->
+    <string name="fa_plus_square">&#xf0fe;</string>
+    <!-- 方加 -->
+    <string name="fa_angle_double_left">&#xf100;</string>
+    <!-- 双箭头 左 -->
+    <string name="fa_angle_double_right">&#xf101;</string>
+    <!-- 双箭头 右 -->
+    <string name="fa_angle_double_up">&#xf102;</string>
+    <!-- 双箭头 上 -->
+    <string name="fa_angle_double_down">&#xf103;</string>
+    <!-- 双箭头 下 -->
+    <string name="fa_angle_left">&#xf104;</string>
+    <!-- 单箭头 左 -->
+    <string name="fa_angle_right">&#xf105;</string>
+    <!-- 单箭头 右 -->
+    <string name="fa_angle_up">&#xf106;</string>
+    <!-- 单箭头 上 -->
+    <string name="fa_angle_down">&#xf107;</string>
+    <!-- 单箭头 下 -->
+    <string name="fa_desktop">&#xf108;</string>
+    <!-- 桌面 -->
+    <string name="fa_laptop">&#xf109;</string>
+    <!-- 笔记本电脑 -->
+    <string name="fa_tablet">&#xf10a;</string>
+    <!-- 表 -->
+    <string name="fa_mobile">&#xf10b;</string>
+    <!-- 手机 -->
+    <string name="fa_circle_o">&#xf10c;</string>
+    <!-- 圈 -->
+    <string name="fa_quote_left">&#xf10d;</string>
+    <!-- 引号 左 -->
+    <string name="fa_quote_right">&#xf10e;</string>
+    <!-- 引号 右 -->
+    <string name="fa_spinner">&#xf110;</string>
+    <!-- 微调 -->
+    <string name="fa_circle">&#xf111;</string>
+    <!-- 圈 -->
+    <string name="fa_reply">&#xf112;</string>
+    <!-- 回复 -->
+    <string name="fa_folder_o">&#xf114;</string>
+    <!-- 文件夹 -->
+    <string name="fa_folder_open_o">&#xf115;</string>
+    <!-- 打开文件夹 -->
+    <string name="fa_smile_o">&#xf118;</string>
+    <!-- 微笑 -->
+    <string name="fa_frown_o">&#xf119;</string>
+    <!-- 皱眉 -->
+    <string name="fa_meh_o">&#xf11a;</string>
+    <!-- 笑脸 -->
+    <string name="fa_gamepad">&#xf11b;</string>
+    <!-- 游戏手柄 -->
+    <string name="fa_keyboard_o">&#xf11c;</string>
+    <!-- 键盘 -->
+    <string name="fa_flag_o">&#xf11d;</string>
+    <!-- 旗杆 -->
+    <string name="fa_flag_checkered">&#xf11e;</string>
+    <!-- 旗杆对  -->
+    <string name="fa_terminal">&#xf120;</string>
+    <!-- 终点站 -->
+    <string name="fa_code">&#xf121;</string>
+    <!-- 代码标 -->
+    <string name="fa_reply_all">&#xf122;</string>
+    <!-- 侧标 -->
+    <string name="fa_mail_reply_all">&#xf122;</string>
+    <!-- 邮箱侧标 -->
+    <string name="fa_star_half_o">&#xf123;</string>
+    <!-- 星半 -->
+    <string name="fa_location_arrow">&#xf124;</string>
+    <!-- 定位标 -->
+    <string name="fa_crop">&#xf125;</string>
+    <!-- 剪图 -->
+    <string name="fa_code_fork">&#xf126;</string>
+    <!--  -->
+    <string name="fa_chain_broken">&#xf127;</string>
+    <!-- 链断 -->
+    <string name="fa_question">&#xf128;</string>
+    <!-- 讯问 -->
+    <string name="fa_info">&#xf129;</string>
+    <!-- 信息 -->
+    <string name="fa_exclamation">&#xf12a;</string>
+    <!-- 感叹 -->
+    <string name="fa_superscript">&#xf12b;</string>
+    <!-- 标志 -->
+    <string name="fa_subscript">&#xf12c;</string>
+    <!-- 数学方程 -->
+    <string name="fa_eraser">&#xf12d;</string>
+    <!-- 黑板擦 -->
+    <string name="fa_puzzle_piece">&#xf12e;</string>
+    <!-- 拼图 -->
+    <string name="fa_microphone">&#xf130;</string>
+    <!-- 微型手机 -->
+    <string name="fa_microphone_slash">&#xf131;</string>
+    <!-- 微型手机 -->
+    <string name="fa_shield">&#xf132;</string>
+    <!-- 盾 -->
+    <string name="fa_calendar_o">&#xf133;</string>
+    <!-- 日历 -->
+    <string name="fa_fire_extinguisher">&#xf134;</string>
+    <!-- 灭火器 -->
+    <string name="fa_rocket">&#xf135;</string>
+    <!-- 火箭 -->
+    <string name="fa_maxcdn">&#xf136;</string>
+    <!-- cdn -->
+    <string name="fa_chevron_circle_left">&#xf137;</string>
+    <!-- 圆形箭标 左 -->
+    <string name="fa_chevron_circle_right">&#xf138;</string>
+    <!-- 圆形箭标 右 -->
+    <string name="fa_chevron_circle_up">&#xf139;</string>
+    <!-- 圆形箭标 上 -->
+    <string name="fa_chevron_circle_down">&#xf13a;</string>
+    <!-- 圆形箭标 下 -->
+    <string name="fa_html5">&#xf13b;</string>
+    <!-- html5 -->
+    <string name="fa_css3">&#xf13c;</string>
+    <!-- css3 -->
+    <string name="fa_anchor">&#xf13d;</string>
+    <!-- 锚 -->
+    <string name="fa_unlock_alt">&#xf13e;</string>
+    <!-- 开锁alt -->
+    <string name="fa_bullseye">&#xf140;</string>
+    <!-- 靶心 -->
+    <string name="fa_ellipsis_h">&#xf141;</string>
+    <!-- 省略 -->
+    <string name="fa_ellipsis_v">&#xf142;</string>
+    <!-- 省略 -->
+    <string name="fa_rss_square">&#xf143;</string>
+    <!-- rss正方形 -->
+    <string name="fa_play_circle">&#xf144;</string>
+    <!-- 圆形播放 -->
+    <string name="fa_ticket">&#xf145;</string>
+    <!-- 票 -->
+    <string name="fa_minus_square">&#xf146;</string>
+    <!-- 正方减 -->
+    <string name="fa_minus_square_o">&#xf147;</string>
+    <!-- 正方减 -->
+    <string name="fa_level_up">&#xf148;</string>
+    <!-- 升标 -->
+    <string name="fa_level_down">&#xf149;</string>
+    <!-- 降标 -->
+    <string name="fa_check_square">&#xf14a;</string>
+    <!-- 正方 对号 -->
+    <string name="fa_pencil_square">&#xf14b;</string>
+    <!-- 正方 铅笔 -->
+    <string name="fa_external_link_square">&#xf14c;</string>
+    <!-- 正方 左上标 -->
+    <string name="fa_share_square">&#xf14d;</string>
+    <!-- 正方 分享 -->
+    <string name="fa_compass">&#xf14e;</string>
+    <!-- 指南针 -->
+    <string name="fa_caret_square_o_down">&#xf150;</string>
+    <!-- 正方 箭标 下 -->
+    <string name="fa_caret_square_o_up">&#xf151;</string>
+    <!-- 正方 箭标 上 -->
+    <string name="fa_caret_square_o_right">&#xf152;</string>
+    <!-- 正方 箭标 右 -->
+    <string name="fa_eur">&#xf153;</string>
+    <!-- 欧元 -->
+    <string name="fa_gbp">&#xf154;</string>
+    <!-- 英镑 -->
+    <string name="fa_usd">&#xf155;</string>
+    <!-- 美元 -->
+    <string name="fa_inr">&#xf156;</string>
+    <!-- 卢比 -->
+    <string name="fa_jpy">&#xf157;</string>
+    <!-- 日元 -->
+    <string name="fa_rub">&#xf158;</string>
+    <!-- 俄罗斯卢布 -->
+    <string name="fa_krw">&#xf159;</string>
+    <!-- 韩币 -->
+    <string name="fa_btc">&#xf15a;</string>
+    <!-- 比特币 -->
+    <string name="fa_file">&#xf15b;</string>
+    <!-- 文件 -->
+    <string name="fa_file_text">&#xf15c;</string>
+    <!-- 文件 文字 -->
+    <string name="fa_sort_alpha_asc">&#xf15d;</string>
+    <!-- 阿尔法 降序 -->
+    <string name="fa_sort_alpha_desc">&#xf15e;</string>
+    <!-- 阿尔法 升序 -->
+    <string name="fa_sort_amount_asc">&#xf160;</string>
+    <!-- 梯 降序 -->
+    <string name="fa_sort_amount_desc">&#xf161;</string>
+    <!-- 梯 升序 -->
+    <string name="fa_sort_numeric_asc">&#xf162;</string>
+    <!-- 数字 降序 -->
+    <string name="fa_sort_numeric_desc">&#xf163;</string>
+    <!-- 数字 升序 -->
+    <string name="fa_thumbs_up">&#xf164;</string>
+    <!-- 大拇指 上 -->
+    <string name="fa_thumbs_down">&#xf165;</string>
+    <!-- 大拇指 下 -->
+    <string name="fa_youtube_square">&#xf166;</string>
+    <!-- youtube -->
+    <string name="fa_youtube">&#xf167;</string>
+    <!-- youtube -->
+    <string name="fa_xing">&#xf168;</string>
+    <!-- 星 -->
+    <string name="fa_xing_square">&#xf169;</string>
+    <!-- 正方 星 -->
+    <string name="fa_youtube_play">&#xf16a;</string>
+    <!-- youtube播放 -->
+    <string name="fa_dropbox">&#xf16b;</string>
+    <!-- dropbox -->
+    <string name="fa_stack_overflow">&#xf16c;</string>
+    <!-- 堆过流 -->
+    <string name="fa_instagram">&#xf16d;</string>
+    <!-- 斯塔克 -->
+    <string name="fa_flickr">&#xf16e;</string>
+    <!-- flickr -->
+    <string name="fa_adn">&#xf170;</string>
+    <!-- 圆 A字体 -->
+    <string name="fa_bitbucket">&#xf171;</string>
+    <!-- 垃圾桶 -->
+    <string name="fa_bitbucket_square">&#xf172;</string>
+    <!-- 垃圾桶 圆 -->
+    <string name="fa_tumblr">&#xf173;</string>
+    <!-- t 字体 -->
+    <string name="fa_tumblr_square">&#xf174;</string>
+    <!-- t 字体圆 -->
+    <string name="fa_long_arrow_down">&#xf175;</string>
+    <!-- 长 向下标 -->
+    <string name="fa_long_arrow_up">&#xf176;</string>
+    <!-- 长 向上标 -->
+    <string name="fa_long_arrow_left">&#xf177;</string>
+    <!-- 长 向左标 -->
+    <string name="fa_long_arrow_right">&#xf178;</string>
+    <!-- 长 向右标 -->
+    <string name="fa_apple">&#xf179;</string>
+    <!-- 苹果 -->
+    <string name="fa_windows">&#xf17a;</string>
+    <!-- Windows -->
+    <string name="fa_android">&#xf17b;</string>
+    <!-- Android -->
+    <string name="fa_linux">&#xf17c;</string>
+    <!-- Linux -->
+    <string name="fa_dribbble">&#xf17d;</string>
+    <!-- 篮球 -->
+    <string name="fa_skype">&#xf17e;</string>
+    <!-- skype -->
+    <string name="fa_foursquare">&#xf180;</string>
+    <!-- 四 方正 -->
+    <string name="fa_trello">&#xf181;</string>
+    <!--  -->
+    <string name="fa_female">&#xf182;</string>
+    <!-- 女 -->
+    <string name="fa_male">&#xf183;</string>
+    <!-- 男 -->
+    <string name="fa_gittip">&#xf184;</string>
+    <!-- git的提示 -->
+    <string name="fa_sun_o">&#xf185;</string>
+    <!-- 太阳 -->
+    <string name="fa_moon_o">&#xf186;</string>
+    <!-- 月亮 -->
+    <string name="fa_archive">&#xf187;</string>
+    <!-- 存档 -->
+    <string name="fa_bug">&#xf188;</string>
+    <!-- bug -->
+    <string name="fa_vk">&#xf189;</string>
+    <!-- VK -->
+    <string name="fa_weibo">&#xf18a;</string>
+    <!-- weibo -->
+    <string name="fa_renren">&#xf18b;</string>
+    <!-- 人人网 -->
+    <string name="fa_pagelines">&#xf18c;</string>
+    <!-- 五叶草 -->
+    <string name="fa_stack_exchange">&#xf18d;</string>
+    <!-- 堆交换 -->
+    <string name="fa_arrow_circle_o_right">&#xf18e;</string>
+    <!-- 圆角 右箭 -->
+    <string name="fa_arrow_circle_o_left">&#xf190;</string>
+    <!-- 圆角 左箭 -->
+    <string name="fa_caret_square_o_left">&#xf191;</string>
+    <!-- 正方 左箭 -->
+    <string name="fa_dot_circle_o">&#xf192;</string>
+    <!-- 圈点 -->
+    <string name="fa_wheelchair">&#xf193;</string>
+    <!-- 轮椅 -->
+    <string name="fa_vimeo_square">&#xf194;</string>
+    <!-- 方 V -->
+    <string name="fa_try">&#xf195;</string>
+    <!-- try 图标 -->
+    <string name="fa_plus_square_o">&#xf196;</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- 正方加号 -->
+</resources>

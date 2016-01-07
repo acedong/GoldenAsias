@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <!-- 开奖区 -->
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		
+        <LinearLayout
+            android:id="@+id/nb_lottery_buy_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="vertical" >
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/playssc_lotteryname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:textColor="@color/darkred" />
+
+                <TextView
+                    android:id="@+id/playssc_issuesales"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/is_playssc_salesissue_label"
+                    android:textColor="@color/darkorange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/playssc_issuenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_playssc_lastissue_wait_label"
+                    android:textColor="@color/white" />
+
+                <!-- <com.newbee.lottery.view.controls.Anticlockwise
+                    android:id="@+id/playssc_salestime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:textColor="@color/goldenrod"
+                    android:textSize="15sp" /> -->
+                <com.goldenasia.lottery.view.controls.RushBuyCountDownTimerView
+			        android:id="@+id/playssc_salestime"
+			        android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:textColor="@color/goldenrod"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/nb_ssc_random_red"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/id_random_icons"
+                android:textColor="@color/white" />
+            <com.goldenasia.lottery.view.controls.RushBuyCountDownTimerView
+		        android:id="@+id/playssc_opentime"
+		        android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/transparent"
+	            android:gravity="right"
+	            android:textSize="0sp"
+	            android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 选择注数提示 -->
+    <LinearLayout
+        android:id="@+id/nb_playssc_bottom_prompt_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellowish"
+        android:orientation="horizontal" >
+        <!-- 注数 金额 倍数 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+            <TextView
+                android:id="@+id/nb_playssc_bottom_game_lottery_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/is_shopping_list_betting_notice"
+                android:textColor="@color/darkgray"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nb_playssc_bottom_game_doubly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/nb_playssc_botton_game_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/nb_playssc_botton_game_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 双色球选号 -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/nb_playssc_bottom_prompt_info"
+        android:layout_below="@id/linear" >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <!-- 手机摇啊摇 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="30dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </RelativeLayout>
+
+                <!-- 选号的容器 -->
+                <!-- 高度固定：留出一个空行——小屏幕手机 -->
+                <!-- 组合区 -->
+
+                <LinearLayout
+                    android:id="@+id/nb_ssc_assemble_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/nb_ssc_assemble_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="10dip"
+                        android:singleLine="true"
+                        android:text="@string/is_hall_summary_default"
+                        android:textColor="@color/darkorange"
+                        android:textSize="12sp" />
+
+                    <com.goldenasia.lottery.view.custom.MyOneGridView
+                        android:id="@+id/nb_ssc_assemble_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="15dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+                <!-- 万位 -->
+
+                <LinearLayout
+                    android:id="@+id/nb_ssc_wan_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/nb_ssc_wan_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="10dip"
+                        android:singleLine="true"
+                        android:text="@string/is_ssc_wan_title"
+                        android:textColor="@color/darkorange"
+                        android:textSize="12sp" />
+
+                    <com.goldenasia.lottery.view.custom.MyOneGridView
+                        android:id="@+id/nb_ssc_wan_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="15dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+                <!-- 千位 -->
+
+                <LinearLayout
+                    android:id="@+id/nb_ssc_qian_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/nb_ssc_qian_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="10dip"
+                        android:text="@string/is_ssc_qian_title"
+                        android:textColor="@color/darkorange" />
+
+                    <com.goldenasia.lottery.view.custom.MyOneGridView
+                        android:id="@+id/nb_ssc_qian_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="15dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+                <!-- 百位 -->
+
+                <LinearLayout
+                    android:id="@+id/nb_ssc_bai_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/nb_ssc_bai_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="10dip"
+                        android:singleLine="true"
+                        android:text="@string/is_ssc_bai_title"
+                        android:textColor="@color/darkorange"
+                        android:textSize="12sp" />
+
+                    <com.goldenasia.lottery.view.custom.MyOneGridView
+                        android:id="@+id/nb_ssc_bai_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="15dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+                <!-- 十位 -->
+
+                <LinearLayout
+                    android:id="@+id/nb_ssc_shi_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/nb_ssc_shi_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="10dip"
+                        android:singleLine="true"
+                        android:text="@string/is_ssc_shi_title"
+                        android:textColor="@color/darkorange"
+                        android:textSize="12sp" />
+
+                    <com.goldenasia.lottery.view.custom.MyOneGridView
+                        android:id="@+id/nb_ssc_shi_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="15dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="13dp" />
+                </LinearLayout>
+                <!-- 个位 -->
+
+                <LinearLayout
+                    android:id="@+id/nb_ssc_ge_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/nb_ssc_ge_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="10dip"
+                        android:singleLine="true"
+                        android:text="@string/is_ssc_ge_title"
+                        android:textColor="@color/darkorange"
+                        android:textSize="12sp" />
+
+                    <com.goldenasia.lottery.view.custom.MyOneGridView
+                        android:id="@+id/nb_ssc_ge_number_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="45dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="15dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

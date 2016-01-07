@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部导航 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:expandable_selector="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true" >
+
+    <!-- 购彩通用导航 -->
+
+    <LinearLayout
+        android:id="@+id/nb_bottom_common"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/nb_bottom_home_hall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nb_bottom_home_hall_ico"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/nb_bottom_home_hall_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nb_bottom_history_lottery_hall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nb_bottom_history_lottery_hall_ico"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/nb_bottom_history_lottery_hall_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nb_bottom_game_history_hall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nb_bottom_game_history_hall_ico"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/nb_bottom_game_history_hall_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nb_bottom_lottery_myself_hall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nb_bottom_lottery_myself_hall_ico"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/nb_bottom_lottery_myself_hall_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 购彩 -->
+
+    <LinearLayout
+        android:id="@+id/nb_bottom_game"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/nb_bottom_game_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip">
+                <!-- 机选 -->
+                <Button
+                    android:id="@+id/nb_bottom_game_choose_random"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nb_round_rosered_backdrop_button"
+                    android:paddingBottom="7dip"
+                    android:paddingTop="7dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip">
+                <!-- 元角分模式 -->
+                <Button
+                    android:id="@+id/nb_bottom_game_choose_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nb_round_rosered_backdrop_button"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip">
+                <!-- 清空 -->
+                <Button
+                    android:id="@+id/nb_bottom_game_choose_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nb_round_rosered_backdrop_button"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nb_bottom_game_choose_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/nb_fillet_red_backdrop_button"
+            android:gravity="right"
+            android:text="@string/is_positive"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

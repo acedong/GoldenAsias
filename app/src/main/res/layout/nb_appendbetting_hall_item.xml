@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+
+    <!-- android:descendantFocusability="blocksDescendants" -->
+
+    <TextView
+        android:id="@+id/nb_append_serial_number"
+        android:layout_width="50dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/is_appendbetting_serial_number_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/nb_append_betting_head"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/nb_append_serial_number"
+        android:focusable="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nb_append_issue_number"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/is_appendbetting_issue_number_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/nb_append_multiple"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/nb_append_multiple_minus"
+                android:layout_width="25dip"
+                android:layout_height="30dip"
+                android:background="@drawable/nb_border_frame_semicircle_gray_left_shape"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textColor="@color/gray" />
+                    
+            <EditText
+                android:id="@+id/num_edit"
+                android:layout_width="45dip"
+                android:layout_height="30dip"
+                android:background="@drawable/nb_border_frame_parallel_gray_shape"
+                android:gravity="center"
+                android:inputType="number"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:focusable="false"
+                android:text="1"
+                android:textSize="12sp" 
+                android:textColor="@color/gray"/>
+
+            <Button
+                android:id="@+id/nb_append_multiple_plus"
+                android:layout_width="25dip"
+                android:layout_height="30dip"
+                android:background="@drawable/nb_border_frame_semicircle_gray_right_shape"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textColor="@color/gray" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:checked="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nb_append_grandtotal_money"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/is_appendbetting_grandtotal_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

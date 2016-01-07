@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- 金亚洲界面大小布局 -->
+    <dimen name="fab_scaling_height">156dp</dimen>
+    <dimen name="title_scroll_height">156dp</dimen>
+
+    <dimen name="header_height">298dp</dimen>
+    <dimen name="min_header_height">250dp</dimen>
+    <dimen name="header_logo_size">100dp</dimen>
+
+    <!--  Banner -->
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dim56dp">56dp</dimen>
+    <dimen name="dim78dp">78dp</dimen>
+
+    <dimen name="side_pane_width">240dp</dimen>
+    <dimen name="main_pane_width">400dp</dimen>
+
+    <!-- Default Parallax ImageView Height  -->
+    <dimen name="size_default_height">160dp</dimen>
+
+    <dimen name="rdo1">0dp</dimen>
+    <dimen name="rdo2">100dp</dimen>
+    <dimen name="rdo3">200dp</dimen>
+    <dimen name="rdo4">300dp</dimen>
+    <dimen name="rdo5">400dp</dimen>
+    <dimen name="rdo6">500dp</dimen>
+
+    <dimen name="table_width">100dp</dimen>
+    <dimen name="table_height">40dp</dimen>
+
+    <dimen name="shadow_size">8dip</dimen>
+
+    <dimen name="app_item_content_margin">28dp</dimen>
+
+    <!-- margin的宽度 -->
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+
+    <!-- height的宽度 -->
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height_60">60dp</dimen>
+    <!-- padding的宽度 -->
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="textSize_22">22sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_10">10sp</dimen>
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_13">13sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_15">15sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSize_17">17sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_24">24sp</dimen>
+    <dimen name="textSize_26">26sp</dimen>
+
+
+    <!-- layout 的高度 -->
+    <dimen name="layout_height_130">130dp</dimen>
+    <dimen name="layout_height_120">120dp</dimen>
+    <dimen name="layout_height_110">110dp</dimen>
+    <dimen name="layout_height_100">100dp</dimen>
+    <dimen name="layout_height_70">70dp</dimen>
+    <dimen name="layout_height_66">66dp</dimen>
+    <dimen name="layout_height_60">60dp</dimen>
+    <dimen name="layout_height_55">55dp</dimen>
+    <dimen name="layout_height_50">50dp</dimen>
+    <dimen name="layout_height_48">48dp</dimen>
+    <dimen name="layout_height_47">47dp</dimen>
+    <dimen name="layout_height_46">46dp</dimen>
+    <dimen name="layout_height_45">45dp</dimen>
+    <dimen name="layout_height_40">40dp</dimen>
+    <dimen name="layout_height_39">39dp</dimen>
+    <dimen name="layout_height_37">37dp</dimen>
+    <dimen name="layout_height_35">35dp</dimen>
+    <dimen name="layout_height_30">30dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

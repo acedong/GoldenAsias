@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/nb_profit_statistics"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/blackgray"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/nb_find_profit_statistics_begintime"
+                android:layout_width="80dip"
+                android:layout_height="30dip"
+                android:background="@drawable/nb_fillet_white_backdrop_button"
+                android:focusable="false"
+                android:inputType="date"
+                android:textSize="12dip" />
+
+            <TextView
+                android:layout_width="40dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:gravity="center"
+                android:text="到"
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:id="@+id/nb_find_profit_statistics_endtime"
+                android:layout_width="80dip"
+                android:layout_height="30dip"
+                android:background="@drawable/nb_fillet_white_backdrop_button"
+                android:focusable="false"
+                android:inputType="date"
+                android:textSize="12dip" />
+
+            <Button
+                android:id="@+id/nb_find_statistics_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/nb_fillet_rosered_backdrop_button"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="查询" />
+    </LinearLayout>
+
+    <!-- 团队统计 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="20.0dip"
+                android:text="团队"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="充值金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_team_realpayment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="提现金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_team_withdraw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="投注金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_team_bets"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="返点金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_team_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="奖金金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_team_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="团队盈亏"
+                            android:textColor="@color/gray" />
+
+                        <TextView  android:id="@+id/nb_statistics_team_profit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- 个人统计 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="20.0dip"
+                android:text="个人"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="投注金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_bets"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="返点金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="奖金金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="充值金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_realpayment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="提现金额"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_withdraw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="0.5dip"
+                        android:layout_marginTop="0.5dip"
+                        android:background="@drawable/settings_itemmiddle_press"
+                        android:paddingBottom="10.0dip"
+                        android:paddingTop="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="个人盈亏"
+                            android:textColor="@color/gray" />
+
+                        <TextView android:id="@+id/nb_statistics_profit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:text="0.0"
+                            android:textColor="@color/golden" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

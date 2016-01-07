@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的彩票 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.goldenasia.lottery.view.controls.IUScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/nb_title"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/info_bg"
+                android:gravity="center_vertical"
+                android:scaleType="fitXY" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/myself_info_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <!-- 头像 名称 -->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical" >
+
+                                <com.goldenasia.lottery.view.custom.RoundImageView
+                                    android:id="@+id/nb_user_avatarimg_info"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/user_icon" />
+
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/shape_story_member_usericon_bg_circle" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <!-- 帐号金额 -->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/nb_username_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/gray"
+                                android:layout_marginBottom="10dip"
+                                android:gravity="center_vertical" />
+
+                            <Button
+                                android:id="@+id/nb_add_member"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/nb_fillet_goldenyellow_border_frame"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/golden"/>
+                        </LinearLayout>
+                        <!-- 返点 -->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <!--
+                                     ImageView 
+				                    android:layout_width="wrap_content" 
+				                    android:layout_height="wrap_content" 
+				                    android:src="@drawable/id_myself_setting"
+                            -->
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/myself_operate_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#33300000"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/nb_balance_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0.00" 
+                            android:textColor="@color/golden"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/gray"
+                            android:text="帐户总额" />
+                    </LinearLayout>
+
+                    <View style="@style/vertical_layout"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/nb_fpoint_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:text="6.4"
+                            android:textColor="@color/golden" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:text="返点"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+
+                    <View style="@style/vertical_layout"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/nb_withdrawals_but"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/golden"
+                            android:text="提现"/>
+                    </LinearLayout>
+
+                    <!--
+				        TextView android:id="@+id/nb_binding_info_bank"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_gravity="center_vertical"
+				            android:layout_weight="1"
+				            android:gravity="center_horizontal"
+				            android:text="绑定银行卡"
+				            android:textColor="@color/white"
+				
+				        TextView
+				            android:layout_width="2dip"
+				            android:layout_height="wrap_content"
+				            android:layout_gravity="center_vertical"
+				            android:gravity="center_horizontal"
+				            android:layout_weight="1"
+				            android:text="|"
+				            android:textColor="@color/lightgray"
+				
+				        TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_gravity="center_vertical"
+				            android:layout_weight="1"
+				            android:gravity="center_horizontal"
+				            android:text="活动"
+				            android:textColor="@color/white"
+                    -->
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlayout_story_message"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp" >
+
+                    <ImageView
+                        android:id="@+id/img_msg"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:padding="5dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.goldenasia.lottery.view.custom.MyListView
+                android:id="@+id/lv_secondView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+		        android:dividerHeight="1dip"
+		        android:divider="@color/black_slight"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:scaleType="fitXY" >
+
+                <Button
+                    android:id="@+id/nb_myself_quit_system"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@drawable/nb_fillet_red_backdrop_button"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="退出" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.goldenasia.lottery.view.controls.IUScrollView>
+
+</RelativeLayout>

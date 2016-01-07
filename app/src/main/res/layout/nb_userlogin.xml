@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:focusable="true" >
+
+    <!-- 提示内容 -->
+
+    <LinearLayout
+        android:id="@+id/view_1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/id_login_tip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_gravity="center_vertical"
+            android:text="@string/is_login_notice1"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/view_1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="60dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/nb_linearlayout_fillet_grayish"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/et_username_title"
+                android:layout_width="50dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"/>
+            <!-- 用户名 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/nb_linearlayout_side_fillet_white"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/nb_user_login_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@null"
+                    android:hint="请输入用户名"
+                    android:inputType="textCapSentences"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gainsboro"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/nb_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/nb_user_login_username"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="-25dip"
+                    android:src="@drawable/id_clear_button"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 密码 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/nb_linearlayout_fillet_grayish"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/et_psw_title"
+                android:layout_width="50dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/nb_linearlayout_side_fillet_white"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/nb_user_login_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gainsboro"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/btnPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/nb_user_login_password"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dip"
+                    android:layout_marginTop="-35dip"
+                    android:src="@drawable/id_eye_hide" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 自动信息 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/nb_rememberpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:text="@string/nb_remember_password_label"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/nb_automaticdoors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nb_rememberpassword"
+                    android:layout_marginLeft="12dip"
+                    android:text="@string/is_auto_login"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 登录按键 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/nb_loginbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/nb_fillet_gray_backdrop_button"
+                android:text="@string/nb_wait_button_label"
+                android:textColor="@color/darkgray"
+                android:enabled="false"
+                android:textSize="9pt" />
+        </LinearLayout>
+        <!-- 第三方登录 -->
+    </LinearLayout>
+    <!-- 客服电话 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dip"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/version_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

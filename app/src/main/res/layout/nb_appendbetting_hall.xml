@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 生成智能追号 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/nb_appendhead_append_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dip"
+        android:orientation="vertical" >
+
+        <!-- 开奖 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/nb_appendbetting_salestitle_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_top_sales_issuelabel" 
+                android:textColor="@color/gray"/>
+
+            <!-- <com.newbee.lottery.view.controls.Anticlockwise
+                android:id="@+id/nb_appendbetting_salestime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/darkorange"
+                android:textSize="15sp" /> -->
+                
+			<com.goldenasia.lottery.view.controls.RushBuyCountDownTimerView
+       			android:id="@+id/nb_appendbetting_salestime"
+       			android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:textColor="@color/goldenrod"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:text="@string/is_appendbetting_issuesetting_label"
+                    android:textColor="@color/gainsboro" />
+
+                <EditText
+                    android:id="@+id/nb_appendbetting_several_text"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:singleLine="true"
+                    android:text="10"
+                    android:textSize="12sp" 
+                    android:background="@drawable/nb_fillet_white_backdrop_button"
+                    android:textColor="@color/rosered"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:text="@string/is_appendbetting_multiple_label"
+                    android:textColor="@color/gainsboro" />
+
+                <EditText
+                    android:id="@+id/nb_appendbetting_multiple_text"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:singleLine="true"
+                    android:background="@drawable/nb_fillet_white_backdrop_button"
+                    android:text="1"
+                    android:textSize="12sp" 
+                    android:textColor="@color/rosered"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/nb_append_generate_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/nb_fillet_rosered_backdrop_button"
+                    android:text="@string/is_appendbetting_generate_label" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/nb_append_generate_fives_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nb_border_semicircle_left_shape"
+                android:text="5期"
+                android:textColor="@color/goldenrod" />
+
+            <Button
+                android:id="@+id/nb_append_generate_ten_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nb_border_parallel_shape"
+                android:text="10期"
+                android:textColor="@color/goldenrod" />
+
+            <Button
+                android:id="@+id/nb_append_generate_fifteen_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nb_border_parallel_shape"
+                android:text="15期"
+                android:textColor="@color/goldenrod" />
+
+            <Button
+                android:id="@+id/nb_append_generate_twenty_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nb_border_parallel_shape"
+                android:text="20期"
+                android:textColor="@color/goldenrod" />
+
+            <Button
+                android:id="@+id/nb_append_generate_twentyfive_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nb_border_parallel_shape"
+                android:text="25期"
+                android:textColor="@color/goldenrod" />
+
+            <Button
+                android:id="@+id/nb_append_generate_all_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nb_border_semicircle_right_shape"
+                android:text="全部"
+                android:textColor="@color/goldenrod" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 底部操作 -->
+
+    <LinearLayout
+        android:id="@+id/nb_appendsettings_append_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" 
+            android:background="@color/darkgray"
+            android:gravity="center">
+
+            <CheckBox
+		        android:id="@+id/nb_appendsettings_append_settings"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dp"
+		        android:text="@string/is_shopping_lable_appendsettings"
+		        android:gravity="center"
+		        android:textSize="14dip"
+		        style="@style/MyCheckBox"/>
+		 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/black"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" >
+
+                <Button
+                    android:id="@+id/nb_appendsettings_numberlist_but"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/nb_fillet_white_backdrop_button"
+                    android:text="@string/is_appendsettings_numberlist_label" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/nb_appendsettings_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/nb_appendsettings_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/nb_appendsettings_shopping_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/nb_fillet_goldenyellow_backdrop_button"
+                    android:text="@string/is_appendsettings_button_betting" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nb_append_area_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/nb_appendsettings_append_area"
+        android:layout_below="@id/nb_appendhead_append_area" >
+
+        <include
+            android:id="@+id/nb_appendbetting_head_title"
+            style="@drawable/nb_border_frame_parallel_gray_shape"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/nb_appendbetting_hall_title" />
+
+        <!-- <com.newbee.lottery.view.controls.HVListView
+            android:id="@+id/nb_appendbetting_hall_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nb_appendbetting_head_title"
+            android:choiceMode="singleChoice"
+            android:divider="@color/blackgray"
+            android:dividerHeight="1.0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdgeLength="0.0sp"
+            android:fastScrollEnabled="true"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true" /> -->
+            
+		<ListView
+            android:id="@+id/nb_appendbetting_hall_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nb_appendbetting_head_title"
+            android:choiceMode="singleChoice"
+            android:divider="@color/blackgray"
+            android:dividerHeight="1.0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdgeLength="0.0sp"
+            android:fastScrollEnabled="true"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true" />
+
+        <!-- <View style="@style/horizontal_layout" /> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_selectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="选择全部" />
+
+            <Button
+                android:id="@+id/btn_cancleselectall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="反选" />
+
+            <Button
+                android:id="@+id/btn_cancelAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消全部" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

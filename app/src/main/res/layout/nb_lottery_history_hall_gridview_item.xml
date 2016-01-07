@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<TextView
+        android:id="@+id/lottery_item_code "
+        android:layout_width="35dip"
+        android:layout_height="36dip"
+        android:background="@drawable/id_redball"
+        android:gravity="center"
+        android:textStyle="bold" />
+</LinearLayout>

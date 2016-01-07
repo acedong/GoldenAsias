@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:id="@+id/nb_shopping_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/nb_fillet_darkgray_boldborder_frame"
+        android:orientation="vertical"
+        android:paddingBottom="5dip" >
+
+        <!-- 开奖区 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/top_sales_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/is_top_sales_issuelabel"
+                android:textColor="@color/lightgray"
+                android:textSize="12sp" />
+
+            <com.goldenasia.lottery.view.controls.RushBuyCountDownTimerView
+                android:id="@+id/top_sales_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:textColor="@color/goldenrod"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!-- 添加操作 -->
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="5dip"
+            android:gravity="top|center_horizontal" >
+
+            <Button
+                android:id="@+id/nb_add_optional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/nb_fillet_goldenrod_backdrop_frame_button"
+                android:text="@string/is_shopping_button_optional"
+                android:textColor="@color/goldenrod" />
+
+            <Button
+                android:id="@+id/nb_add_random"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/nb_fillet_goldenrod_backdrop_frame_button"
+                android:text="@string/is_shopping_button_random"
+                android:textColor="@color/goldenrod" />
+
+            <Button
+                android:id="@+id/nb_lottery_shopping_initiate_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/nb_fillet_goldenrod_backdrop_frame_button"
+                android:text="@string/is_shopping_button_chase"
+                android:textColor="@color/goldenrod" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 底部操操作 -->
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/nb_shopping_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <RelativeLayout android:id="@+id/nb_shopping_fixed_shutter"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/nb_frame_article"
+                android:gravity="center_vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="20dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_shopping_lable_continuous"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/nb_shopping_append_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nb_fillet_white_backdrop_button"
+                        android:text="@string/fa_minus"
+                        android:textSize="12sp" >
+                    </Button>
+
+                    <EditText
+                        android:id="@+id/nb_shopping_append_text"
+                        android:layout_width="40dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="1234567890"
+                        android:gravity="center"
+                        android:numeric="integer"
+                        android:text="1" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/nb_shopping_append_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nb_fillet_white_backdrop_button"
+                        android:text="@string/fa_plus"
+                        android:textSize="12sp" >
+                    </Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_shopping_lable_alloted"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_shopping_lable_betting"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/nb_shopping_double_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nb_fillet_white_backdrop_button"
+                        android:text="@string/fa_minus"
+                        android:textSize="12sp" >
+                    </Button>
+
+                    <EditText
+                        android:id="@+id/nb_shopping_double_text"
+                        android:layout_width="40dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="1234567890"
+                        android:gravity="center"
+                        android:numeric="integer"
+                        android:text="1" >
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/nb_shopping_double_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nb_fillet_white_backdrop_button"
+                        android:text="@string/fa_plus"
+                        android:textSize="12sp" >
+                    </Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_shopping_lable_multiple"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/nb_shopping_holding"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/darkgray"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/nb_shopping_append_settings"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/is_shopping_lable_appendsettings"
+                    android:textColor="@color/gainsboro"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@color/black_slight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <ToggleButton
+                    android:id="@+id/mTogBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dip"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/checkbox_iphone"
+                    android:checked="true"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/nb_shopping_lottery_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/nb_shopping_lottery_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/nb_lottery_shopping_buy"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/nb_fillet_goldenyellow_backdrop_button"
+                    android:text="@string/is_shopping_button_betting" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 购物车展示 -->
+
+    <com.goldenasia.lottery.view.custom.SwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nb_shopping_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativelayout_button"
+        android:layout_below="@id/nb_shopping_top"
+        android:choiceMode="singleChoice"
+        android:divider="@color/black_slight"
+        android:dividerHeight="1dip"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        swipe:swipeActionLeft="reveal"
+        swipe:swipeActionRight="reveal"
+        swipe:swipeAnimationTime="1"
+        swipe:swipeBackView="@+id/nb_shopping_list_item_right"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/nb_shopping_list_item_left"
+        swipe:swipeMode="left"
+        swipe:swipeOffsetLeft="0dip"
+        swipe:swipeOffsetRight="0dp"
+        swipe:swipeOpenOnLongPress="false" />
+
+</RelativeLayout>
